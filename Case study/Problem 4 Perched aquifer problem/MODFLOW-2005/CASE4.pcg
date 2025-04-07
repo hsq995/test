@@ -1,0 +1,2 @@
+500 50 1 0                               #  1. MXITER ITER1 NPCOND [IHCOFADD]
+0.01 0.01 1.0 0 0 2 0.6                  #  2. HCLOSE RCLOSE RELAX NBPOL IPRPCG MUTPCG DAMPPCG [DAMPPCGT]

@@ -1,0 +1,243 @@
+                                  MODFLOW-NWT-SWR1 
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUNDWATER-FLOW MODEL
+                            VERSION 1.2.0 03/01/2020
+                    BASED ON MODFLOW-2005 VERSION 1.12.00 02/03/2017
+
+ LIST FILE: CASE1-EI.out
+                         UNIT    1
+
+ OPENING CASE1-EI.hed
+ FILE TYPE:DATA(BINARY)   UNIT    2   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.drw
+ FILE TYPE:DATA(BINARY)   UNIT    3   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.ccf
+ FILE TYPE:DATA(BINARY)   UNIT   40   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.lmt6
+ FILE TYPE:LMT6   UNIT    4   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.dis
+ FILE TYPE:DIS   UNIT    7   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.ba6
+ FILE TYPE:BAS6   UNIT    8   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.upw
+ FILE TYPE:UPW   UNIT   12   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.oc
+ FILE TYPE:OC   UNIT   10   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE1-EI.nwt
+ FILE TYPE:NWT   UNIT   13   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ BAS -- BASIC PACKAGE, VERSION 1.2.0, 3/01/2020 INPUT READ FROM UNIT    8
+ 
+ MODFLOW was compiled using mixed precision
+ Precision of REAL variables:           6
+ Precision of DOUBLE PRECISION variables:          15
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT    7
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+    1 LAYERS         1 ROWS        20 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+  Confining bed flag for each layer:
+   0
+
+                     DELR =   250.000    
+
+                     DELC =   50.0000    
+
+ TOP ELEVATION OF LAYER 1 =   50.0000    
+
+   MODEL LAYER BOTTOM EL. =   0.00000     FOR LAYER   1
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+ 
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   1
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ AQUIFER HEAD WILL BE SET TO  -999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+
+
+                       INITIAL HEAD FOR LAYER   1
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ AUXILIARY DATA WILL BE SAVED IN CELL-BY-CELL BUDGET FILES
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    2    DRAWDOWNS WILL BE SAVED ON UNIT    3
+ #
+
+ NWT1 -- Newton Solver, VERSION 1.2.0, 3/01/2020
+         INPUT READ FROM UNIT 13
+
+ SIMPLE OPTION:
+ DEFAULT SOLVER INPUT VALUES REFLECT NEARLY LINEAR MODEL
+ ***XMD linear solver will be used***
+ 
+   CONVERGENCE CRITERION OF   0.100000E-03 FOR HEAD SOLUTION
+   AND A TOLERANCE OF   0.100000E-03 FOR FLOW SOLUTION AND 
+   A MAXIMUM OF   400 OUTER ITERATIONS. 
+
+
+   D-B-D REDUCTION FACTOR OF    0.970000E+00 AND 
+   A D-B-D INCREASE FACTOR OF    0.100000E-03 AND 
+   A D-B-D RELAXATION OF    0.000000E+00 AND 
+   A MOMENTUM FACTOR OF    0.000000E+00 .
+
+
+ ***BACKTRACKING IS INACTIVE***
+ XMD -- LINEAR SOLUTION BY XMD PACKAGE VERSION 1.30
+     BY MOTOMU IBARAKI, OHIO STATE UNIVERSITY, COLOMBUS, OH
+                 INPUT READ FROM UNIT 13
+ ACCELERATION METHOD                    (IACL) =         1
+ NODE ORDERING FLAG                   (NORDER) =         0
+ LEVEL OF FILL                         (LEVEL) =         1
+ MAXIMUM NUMBER OF ORTHOGONALIZATIONS  (NORTH) =         5
+ INDEX FOR USING REDUCED SYSTEM      (IREDSYS) =         1
+ RESID. REDUCTION CONVERGE CRITERION  (RRCTOL) =  0.000000E+00
+ INDEX FOR USING DROP TOLERANCE     (IDROPTOL) =         1
+ DROP TOLERANCE VALUE                  (EPSRN) =  0.500000E-02
+ CONVERGENCE CRITERIA OF           (HCLOSEXMD) =  0.100000E-02
+ MAX. NUMBER OF LINEAR ITERATIONS  (MXITERXMD) =        50
+
+
+ UPW1 -- UPSTREAM WEIGHTING FLOW PACKAGE, VERSION 1.2.0, 3/01/2020
+         INPUT READ FROM UNIT 12
+
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP          LAYAVG    CHANI           LAYVKA           LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0    -1.000E+00             1             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER   (LAYTYP)        (LAYAVG)      (CHANI)     (LAYVKA)       (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC      VARIABLE    ANISOTROPY  NON-WETTABLE
+
+    HYD. COND. ALONG ROWS =   50.0000     FOR LAYER   1
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   1
+
+  HORIZ. TO VERTICAL ANI. =   3.00000     FOR LAYER   1
+
+ WARNING READING LMT PACKAGE INPUT DATA:
+ [STANDARD] HEADER NO LONGER SUPPORTED; [EXTENDED] HEADER USED INSTEAD.
+
+
+ ***Link-MT3DMS Package v7***
+ OPENING LINK-MT3DMS OUTPUT FILE: CASE1-EI.hff                                                                                                                                                                                            
+ ON UNIT NUMBER:   333
+ FILE TYPE: UNFORMATTED
+ HEADER OPTION: EXTENDED
+ ***Link-MT3DMS Package v7***
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+ 
+ SOLVING FOR HEAD 
+
+    ------------------------------------------------
+       NWT REQUIRED            7 OUTER ITERATIONS 
+       AND A TOTAL OF         12 INNER ITERATIONS.
+    ------------------------------------------------
+
+ OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP    1
+    PRINT BUDGET
+    SAVE HEAD FOR ALL LAYERS
+    SAVE DRAWDOWN FOR ALL LAYERS
+    SAVE BUDGET
+ UBDSV2 SAVING "   CONSTANT HEAD" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW RIGHT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+
+ SAVING SATURATED THICKNESS AND FLOW TERMS ON UNIT  333 FOR MT3DMS
+ BY THE LINK-MT3DMS PACKAGE V7 AT TIME STEP    1, STRESS PERIOD    1
+
+
+ HEAD WILL BE SAVED ON UNIT    2 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+ DRAWDOWN WILL BE SAVED ON UNIT    3 AT END OF TIME STEP    1, STRESS PERIOD    1
+1
+  VOLUMETRIC BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUMES      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE     =           0.0000               STORAGE     =           0.0000
+       CONSTANT HEAD     =         657.2657         CONSTANT HEAD     =         657.2657
+
+                TOTAL IN =         657.2657                  TOTAL IN =         657.2657
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE     =           0.0000               STORAGE     =           0.0000
+       CONSTANT HEAD     =         657.2657         CONSTANT HEAD     =         657.2657
+
+               TOTAL OUT =         657.2657                 TOTAL OUT =         657.2657
+
+                IN - OUT =      -6.1035E-05                  IN - OUT =      -6.1035E-05
+
+     PERCENT DISCREPANCY =          -0.00         PERCENT DISCREPANCY =          -0.00
+
+
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+1
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2023/05/24 22:44:40
+ Elapsed run time:  0.006 Seconds
+

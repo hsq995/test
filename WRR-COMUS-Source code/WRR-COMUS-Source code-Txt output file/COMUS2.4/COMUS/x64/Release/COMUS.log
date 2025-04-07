@@ -1,0 +1,44 @@
+﻿生成启动时间为 2023/6/22 23:25:00。
+     1>项目“F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\COMUS\COMUS.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt source\BndHandler.cpp source\CHBCell.cpp source\ComusMain.cpp source\Drain.cpp source\GDWater.cpp source\GHB.cpp source\GridCell.cpp source\GridLyr.cpp source\PressPeriod.cpp source\Rchg.cpp source\ResultVal.cpp source\Solver.cpp source\StdAfx.cpp source\Well.cpp
+         BndHandler.cpp
+         CHBCell.cpp
+         ComusMain.cpp
+         Drain.cpp
+         GDWater.cpp
+         GHB.cpp
+         GridCell.cpp
+         GridLyr.cpp
+         PressPeriod.cpp
+         Rchg.cpp
+         ResultVal.cpp
+         Solver.cpp
+         StdAfx.cpp
+         Well.cpp
+       Link:
+         D:\VS2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\x64\Release\COMUS.exe" /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:D:\VS2015\VC\Include\Manifest\dpiaware.manifest /DEBUG:FASTLINK /PDB:"F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\x64\Release\COMUS.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\x64\Release\COMUS.lib" /MACHINE:X64 x64\Release\BndHandler.obj
+         x64\Release\CHBCell.obj
+         x64\Release\ComusMain.obj
+         x64\Release\Drain.obj
+         x64\Release\GDWater.obj
+         x64\Release\GHB.obj
+         x64\Release\GridCell.obj
+         x64\Release\GridLyr.obj
+         x64\Release\PressPeriod.obj
+         x64\Release\Rchg.obj
+         x64\Release\ResultVal.obj
+         x64\Release\Solver.obj
+         x64\Release\StdAfx.obj
+         x64\Release\Well.obj
+         正在生成代码
+         1530 of 1536 functions (99.6%) were compiled, the rest were copied from previous compilation.
+           86 functions were new in current compilation
+           3 functions had inline decision re-evaluated but remain unchanged
+         已完成代码的生成
+         COMUS.vcxproj -> F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\x64\Release\COMUS.exe
+     1>已完成生成项目“F:\WRR Revision1\提交材料\WRR-COMUS-Source code\WRR-COMUS-Source code-Txt output file\COMUS2.4\COMUS\COMUS.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:18.82

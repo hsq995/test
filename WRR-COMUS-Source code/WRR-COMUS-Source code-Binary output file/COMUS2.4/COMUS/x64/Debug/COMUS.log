@@ -1,0 +1,40 @@
+﻿生成启动时间为 2023/5/17 23:48:04。
+     1>项目“F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\COMUS\COMUS.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\VS2015\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /openmp- /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt source\BndHandler.cpp source\CHBCell.cpp source\ComusMain.cpp source\Drain.cpp source\GDWater.cpp source\GHB.cpp source\GridCell.cpp source\GridLyr.cpp source\PressPeriod.cpp source\Rchg.cpp source\ResultVal.cpp source\Solver.cpp source\StdAfx.cpp source\Well.cpp
+         Well.cpp
+         StdAfx.cpp
+         Solver.cpp
+         ResultVal.cpp
+         Rchg.cpp
+         PressPeriod.cpp
+         GridLyr.cpp
+         GridCell.cpp
+         GHB.cpp
+         GDWater.cpp
+         Drain.cpp
+         ComusMain.cpp
+         CHBCell.cpp
+         BndHandler.cpp
+         正在生成代码...
+       Link:
+         D:\VS2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\x64\Debug\COMUS.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:D:\VS2015\VC\Include\Manifest\dpiaware.manifest /Debug /PDB:"F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\x64\Debug\COMUS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\x64\Debug\COMUS.lib" /MACHINE:X64 x64\Debug\BndHandler.obj
+         x64\Debug\CHBCell.obj
+         x64\Debug\ComusMain.obj
+         x64\Debug\Drain.obj
+         x64\Debug\GDWater.obj
+         x64\Debug\GHB.obj
+         x64\Debug\GridCell.obj
+         x64\Debug\GridLyr.obj
+         x64\Debug\PressPeriod.obj
+         x64\Debug\Rchg.obj
+         x64\Debug\ResultVal.obj
+         x64\Debug\Solver.obj
+         x64\Debug\StdAfx.obj
+         x64\Debug\Well.obj
+         COMUS.vcxproj -> F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\x64\Debug\COMUS.exe
+     1>已完成生成项目“F:\WRR Revision1\WRR-COMUS-Source code\Binary file\COMUS2.4\COMUS\COMUS.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:18.99

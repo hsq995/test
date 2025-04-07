@@ -1,0 +1,1023 @@
+                                  MODFLOW-NWT-SWR1 
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUNDWATER-FLOW MODEL
+                            VERSION 1.2.0 03/01/2020
+                    BASED ON MODFLOW-2005 VERSION 1.12.00 02/03/2017
+
+ LIST FILE: CASE4.out
+                         UNIT    1
+
+ OPENING CASE4.hed
+ FILE TYPE:DATA(BINARY)   UNIT    2   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.drw
+ FILE TYPE:DATA(BINARY)   UNIT    3   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.ccf
+ FILE TYPE:DATA(BINARY)   UNIT   40   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.lmt6
+ FILE TYPE:LMT6   UNIT    4   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.dis
+ FILE TYPE:DIS   UNIT    7   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.ba6
+ FILE TYPE:BAS6   UNIT    8   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.upw
+ FILE TYPE:UPW   UNIT    9   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.oc
+ FILE TYPE:OC   UNIT   10   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.rch
+ FILE TYPE:RCH   UNIT   11   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.nwt
+ FILE TYPE:NWT   UNIT   12   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ BAS -- BASIC PACKAGE, VERSION 1.2.0, 3/01/2020 INPUT READ FROM UNIT    8
+ 
+ MODFLOW was compiled using mixed precision
+ Precision of REAL variables:           6
+ Precision of DOUBLE PRECISION variables:          15
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT    7
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+   10 LAYERS         1 ROWS       100 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+  Confining bed flag for each layer:
+   0   0   0   0   0   0   0   0   0   0
+
+                     DELR =   100.000    
+
+                     DELC =   100.000    
+
+ TOP ELEVATION OF LAYER 1 =   2000.00    
+
+   MODEL LAYER BOTTOM EL. =   1800.00     FOR LAYER   1
+
+   MODEL LAYER BOTTOM EL. =   1600.00     FOR LAYER   2
+
+   MODEL LAYER BOTTOM EL. =   1400.00     FOR LAYER   3
+
+   MODEL LAYER BOTTOM EL. =   1200.00     FOR LAYER   4
+
+   MODEL LAYER BOTTOM EL. =   1000.00     FOR LAYER   5
+
+   MODEL LAYER BOTTOM EL. =   800.000     FOR LAYER   6
+
+   MODEL LAYER BOTTOM EL. =   600.000     FOR LAYER   7
+
+   MODEL LAYER BOTTOM EL. =   400.000     FOR LAYER   8
+
+   MODEL LAYER BOTTOM EL. =   200.000     FOR LAYER   9
+
+   MODEL LAYER BOTTOM EL. =   0.00000     FOR LAYER  10
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+ 
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+           BOUNDARY ARRAY =              1 FOR LAYER   1
+
+           BOUNDARY ARRAY =              1 FOR LAYER   2
+
+           BOUNDARY ARRAY =              1 FOR LAYER   3
+
+           BOUNDARY ARRAY =              1 FOR LAYER   4
+
+           BOUNDARY ARRAY =              1 FOR LAYER   5
+
+           BOUNDARY ARRAY =              1 FOR LAYER   6
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   7
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   8
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   9
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER  10
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ AQUIFER HEAD WILL BE SET TO  -999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+             INITIAL HEAD =   2000.00     FOR LAYER   1
+
+             INITIAL HEAD =   2000.00     FOR LAYER   2
+
+             INITIAL HEAD =   2000.00     FOR LAYER   3
+
+             INITIAL HEAD =   2000.00     FOR LAYER   4
+
+             INITIAL HEAD =   2000.00     FOR LAYER   5
+
+             INITIAL HEAD =   2000.00     FOR LAYER   6
+
+
+
+                       INITIAL HEAD FOR LAYER   7
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   8
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   9
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER  10
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ AUXILIARY DATA WILL BE SAVED IN CELL-BY-CELL BUDGET FILES
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    2    DRAWDOWNS WILL BE SAVED ON UNIT    3
+ #
+
+ NWT1 -- Newton Solver, VERSION 1.2.0, 3/01/2020
+         INPUT READ FROM UNIT 12
+
+ SIMPLE OPTION:
+ DEFAULT SOLVER INPUT VALUES REFLECT NEARLY LINEAR MODEL
+ ***XMD linear solver will be used***
+ 
+   CONVERGENCE CRITERION OF   0.100000E-03 FOR HEAD SOLUTION
+   AND A TOLERANCE OF   0.100000E-03 FOR FLOW SOLUTION AND 
+   A MAXIMUM OF  5000 OUTER ITERATIONS. 
+
+
+   D-B-D REDUCTION FACTOR OF    0.970000E+00 AND 
+   A D-B-D INCREASE FACTOR OF    0.100000E-03 AND 
+   A D-B-D RELAXATION OF    0.000000E+00 AND 
+   A MOMENTUM FACTOR OF    0.000000E+00 .
+
+
+ ***BACKTRACKING IS INACTIVE***
+ XMD -- LINEAR SOLUTION BY XMD PACKAGE VERSION 1.30
+     BY MOTOMU IBARAKI, OHIO STATE UNIVERSITY, COLOMBUS, OH
+                 INPUT READ FROM UNIT 12
+ ACCELERATION METHOD                    (IACL) =         1
+ NODE ORDERING FLAG                   (NORDER) =         0
+ LEVEL OF FILL                         (LEVEL) =         1
+ MAXIMUM NUMBER OF ORTHOGONALIZATIONS  (NORTH) =         5
+ INDEX FOR USING REDUCED SYSTEM      (IREDSYS) =         1
+ RESID. REDUCTION CONVERGE CRITERION  (RRCTOL) =  0.000000E+00
+ INDEX FOR USING DROP TOLERANCE     (IDROPTOL) =         1
+ DROP TOLERANCE VALUE                  (EPSRN) =  0.500000E-02
+ CONVERGENCE CRITERIA OF           (HCLOSEXMD) =  0.100000E-02
+ MAX. NUMBER OF LINEAR ITERATIONS  (MXITERXMD) =        50
+
+
+ UPW1 -- UPSTREAM WEIGHTING FLOW PACKAGE, VERSION 1.2.0, 3/01/2020
+         INPUT READ FROM UNIT  9
+
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP          LAYAVG    CHANI           LAYVKA           LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0    -1.000E+00             0             0
+    2             1             0    -1.000E+00             0             0
+    3             1             0    -1.000E+00             0             0
+    4             1             0    -1.000E+00             0             0
+    5             1             0    -1.000E+00             0             0
+    6             1             0    -1.000E+00             0             0
+    7             1             0    -1.000E+00             0             0
+    8             1             0    -1.000E+00             0             0
+    9             1             0    -1.000E+00             0             0
+   10             1             0    -1.000E+00             0             0
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER   (LAYTYP)        (LAYAVG)      (CHANI)     (LAYVKA)       (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    2   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    3   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    4   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    5   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    6   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    7   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    8   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+    9   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+   10   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K  NON-WETTABLE
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   1
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   1
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   1
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   2
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   2
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   2
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   3
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   3
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   3
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   4
+ READING ON UNIT    9 WITH FORMAT: (FREE)              
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   4
+
+
+
+                VERTICAL HYD. COND. FOR LAYER   4
+ READING ON UNIT    9 WITH FORMAT: (FREE)              
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   5
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   5
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   5
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   6
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   6
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   6
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   7
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   7
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   7
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   8
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   8
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   8
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   9
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   9
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   9
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER  10
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER  10
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER  10
+
+ RCH -- RECHARGE PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   11
+ #
+ No named parameters
+ OPTION 3 -- RECHARGE TO HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+
+
+     0 Recharge parameters
+
+ WARNING READING LMT PACKAGE INPUT DATA:
+ [STANDARD] HEADER NO LONGER SUPPORTED; [EXTENDED] HEADER USED INSTEAD.
+
+
+ ***Link-MT3DMS Package v7***
+ OPENING LINK-MT3DMS OUTPUT FILE: CASE4.hff                                                                                                                                                                                               
+ ON UNIT NUMBER:   333
+ FILE TYPE: UNFORMATTED
+ HEADER OPTION: EXTENDED
+ ***Link-MT3DMS Package v7***
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+
+
+                           RECHARGE
+ READING ON UNIT   11 WITH FORMAT: (FREE)              
+ 
+ SOLVING FOR HEAD 
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                 1          50            99    1    10      -0.1857890910E+04      99    1   10        -0.3800000000E+07      0.6224347355E+07
+          0                 2          51            52    1     3       0.2331644297E+04     100    1    9        -0.1954404459E+05      0.3403736543E+05
+          0                 3          50            49    1     1      -0.3570263896E+07      56    1    3         0.4191429693E+07      0.1078658294E+08
+          0                 4          50            49    1     1       0.3337445928E+07      56    1    3        -0.1383643714E+04      0.1898779537E+04
+          0                 5          50            49    1     1       0.2618954383E+06      89    1   10         0.2395504871E+03      0.3620188967E+03
+          0                 6          50            49    1     3      -0.2555597440E+05      49    1    3        -0.1162247738E+09      0.2465498252E+09
+          0                 7          50            47    1     1       0.6534711067E+05      49    1    3        -0.1329941697E+08      0.2817866159E+08
+          0                 8          50            50    1     2       0.7167695966E+05      47    1    3        -0.2608739806E+09      0.5533847684E+09
+          0                 9          50            45    1     1       0.9398112996E+05      50    1    2        -0.2855875621E+09      0.6128304133E+09
+          0                10          50            45    1     3      -0.8323243093E+05      45    1    1        -0.3754191530E+09      0.8020849119E+09
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                11          50            48    1     2       0.5570326167E+05      45    1    2        -0.4286063920E+08      0.9126418751E+08
+          0                12          50            51    1     1       0.4627360416E+05      48    1    2        -0.2225605868E+09      0.4596103331E+09
+          0                13          50            51    1     1      -0.4089581029E+05      51    1    1        -0.1846842955E+09      0.4007371384E+09
+          0                14          50            46    1     3      -0.2677772226E+05      46    1    3        -0.1373377672E+09      0.2971259468E+09
+          0                15          50            46    1     3      -0.5783654074E+04      46    1    3        -0.2962302994E+08      0.6323140883E+08
+          0                16          50            46    1     3      -0.1247836545E+04      46    1    2        -0.6387569582E+07      0.1356502818E+08
+          0                17          50            46    1     3      -0.2512635321E+03      46    1    3        -0.1376737674E+07      0.2089693912E+07
+          0                18          46            51    1     1      -0.1620543762E+03      46    1    2        -0.2919113264E+06      0.3859472549E+06
+          0                19          36            51    1     2      -0.3321324279E+02      46    1    2        -0.8741804317E+05      0.1167305114E+06
+          0                20          36            46    1     2      -0.1262088402E+03      46    1    2        -0.6542224419E+05      0.8133591938E+05
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                21          16            46    1     1      -0.3652404016E+02      46    1    2        -0.1414407987E+05      0.2451737272E+05
+          0                22          26            55    1     3       0.3324335504E+02      54    1    3        -0.3356215998E+05      0.4803864566E+05
+          0                23          16            52    1     1       0.7736495763E+01      54    1    3        -0.6883366267E+04      0.1031243741E+05
+          0                24          11            55    1     3       0.8500604480E+01      46    1    3        -0.1229758394E+04      0.2337788230E+04
+          0                25          11            53    1     1       0.5440748895E+01      46    1    3        -0.4758399965E+03      0.7732414102E+03
+          0                26          11            55    1     3       0.1351837067E+02      54    1    3         0.1899982595E+03      0.3360803679E+03
+          0                27          11            55    1     3       0.1351379294E+02      46    1    3        -0.6686921906E+02      0.1471009476E+03
+          0                28           6            55    1     3       0.1358768038E+02      51    1    2        -0.4565038573E+02      0.7625799661E+02
+          0                29           4            55    1     1       0.1316694403E+02      51    1    2        -0.1979874516E+02      0.3647425220E+02
+          0                30           3            55    1     1       0.1288922978E+02      55    1    1         0.9540251491E+01      0.2601615537E+02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                31           6            55    1     1       0.1263139274E+02      55    1    2         0.9532535408E+01      0.2366913062E+02
+          0                32           3            55    1     1       0.1238802037E+02      55    1    2         0.9529492739E+01      0.2373265510E+02
+          0                33           2            55    1     1       0.1215925702E+02      56    1    3        -0.9527884204E+01      0.2335194437E+02
+          0                34           2            55    1     1       0.1194220645E+02      56    1    3        -0.9526080603E+01      0.2328496749E+02
+          0                35           2            55    1     1       0.1173627913E+02      56    1    3        -0.9523734800E+01      0.2326508099E+02
+          0                36           2            55    1     1       0.1154052848E+02      56    1    3        -0.9521197933E+01      0.2325051216E+02
+          0                37           2            55    1     1       0.1135410669E+02      56    1    3        -0.9518562040E+01      0.2323491053E+02
+          0                38           2            55    1     1       0.1117625089E+02      56    1    3        -0.9515838150E+01      0.2321715985E+02
+          0                39           2            55    1     1       0.1100626006E+02      56    1    3        -0.9513006114E+01      0.2319669326E+02
+          0                40           6            55    1     1       0.1084345372E+02      56    1    3        -0.9510029558E+01      0.2317248669E+02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                41           2            55    1     1       0.1068728475E+02      56    1    3        -0.9506875829E+01      0.2320950254E+02
+          0                42           2            55    1     1       0.1053708006E+02      56    1    3        -0.9503407250E+01      0.2311407050E+02
+          0                43           3            55    1     1       0.1039224263E+02      56    1    3        -0.9499574576E+01      0.2305942935E+02
+          0                44           3            55    1     1       0.1025204181E+02      56    1    3        -0.9495181668E+01      0.2299594429E+02
+          0                45           3            55    1     1       0.1011548962E+02      56    1    3        -0.9489929553E+01      0.2290937355E+02
+          0                46           3            55    1     1       0.9981047519E+01      56    1    3        -0.9483300826E+01      0.2278429744E+02
+          0                47           3            55    1     1       0.9845641417E+01      56    1    3        -0.9474282870E+01      0.2259825666E+02
+          0                48           3            55    1     1       0.9701206543E+01      56    1    3        -0.9460619875E+01      0.2233060493E+02
+          0                49           3            55    1     1       0.9516617914E+01      56    1    3        -0.9436164029E+01      0.2213485406E+02
+          0                50           4            55    1     1       0.9029918727E+01      54    1    3         0.1258717395E+02      0.2481599392E+02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                51           4            55    1     3      -0.3225096321E+01      55    1    3        -0.3370968252E+05      0.4757245260E+05
+          0                52           4            54    1     1       0.3036401131E+01      55    1    3        -0.5619580065E+04      0.7917868798E+04
+          0                53           4            53    1     1       0.8077521433E+00      55    1    3        -0.9190395033E+03      0.1294036188E+04
+          0                54           3            50    1     1       0.7669096211E-01      55    1    3        -0.1494031045E+03      0.2133170968E+03
+          0                55           4            50    1     1       0.2952007288E-01      55    1    3        -0.2430189686E+02      0.3765407236E+02
+          0                56           7            50    1     1       0.1166257563E-01      51    1    2         0.4744445191E+01      0.8378861709E+01
+          0                57           3            50    1     1       0.4623543584E-02      51    1    2         0.1739023389E+01      0.2572868708E+01
+          0                58           3            50    1     1       0.1863225934E-02      51    1    2         0.6173609035E+00      0.9088454030E+00
+          0                59           2            50    1     1       0.7582081657E-03      51    1    2         0.2151578641E+00      0.3574994957E+00
+          0                60           1            50    1     1       0.2898573724E-03      51    1    2         0.7422967907E-01      0.1387642417E+00
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                61           1            50    1     1       0.1236142102E-03      51    1    2         0.2464518312E-01      0.5900085656E-01
+          0                62           1            50    1     1       0.5581690648E-04      51    1    2         0.8184038685E-02      0.3440419795E-01
+          0                63           1            50    1     1       0.2751266129E-04      76    1    9        -0.6156012765E-02      0.2778102361E-01
+          0                64           1            77    1     2      -0.1847660419E-04      64    1    9        -0.6144664716E-02      0.2576651508E-01
+          0                65           1            77    1     2      -0.2059926986E-04      64    1    9        -0.6221737247E-02      0.2489707981E-01
+          0                66           1            77    1     1      -0.1878746709E-04      64    1    9        -0.6125881104E-02      0.2419019876E-01
+          0                67           1            77    1     1      -0.1710363307E-04      64    1    9        -0.5884427810E-02      0.2320489606E-01
+          0                68           1            77    1     1      -0.1567382487E-04      64    1    9        -0.5605319515E-02      0.2216259234E-01
+          0                69           1            77    1     1      -0.1443497007E-04      64    1    9        -0.5332770292E-02      0.2117280479E-01
+          0                70           1            77    1     1      -0.1335242475E-04      64    1    9        -0.5079386756E-02      0.2026486629E-01
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                71           1            77    1     1      -0.1240339035E-04      64    1    9        -0.4847598262E-02      0.1944077854E-01
+          0                72           1            77    1     1      -0.1156675719E-04      64    1    9        -0.4636461614E-02      0.1869413166E-01
+          0                73           1            77    1     1      -0.1082486667E-04      64    1    9        -0.4443968181E-02      0.1801608046E-01
+          0                74           1            77    1     1      -0.1016360098E-04      64    1    9        -0.4267945886E-02      0.1739797373E-01
+          0                75           1            77    1     1      -0.9572056538E-05      64    1    9        -0.4106404725E-02      0.1683233420E-01
+          0                76           1            77    1     1      -0.9040481073E-05      64    1    9        -0.3957638051E-02      0.1631271542E-01
+          0                77           1            77    1     1      -0.8560566453E-05      64    1    9        -0.3820156213E-02      0.1583347170E-01
+          0                78           1            77    1     1      -0.8125851208E-05      64    1    9        -0.3692662809E-02      0.1538987558E-01
+          0                79           1            77    1     1      -0.7730416077E-05      64    1    9        -0.3574065398E-02      0.1497787574E-01
+          0                80           1            77    1     1      -0.7369533491E-05      64    1    9        -0.3463408677E-02      0.1459393724E-01
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                81           1            77    1     1      -0.7039108993E-05      64    1    9        -0.3359874943E-02      0.1423506610E-01
+          0                82           1            77    1     1      -0.6735665646E-05      48    1    9        -0.3275544615E-02      0.1389864421E-01
+          0                83           1            77    1     1      -0.6456141626E-05      48    1    9        -0.3236331511E-02      0.1358240551E-01
+          0                84           1            77    1     1      -0.6197960110E-05      48    1    9        -0.3197892569E-02      0.1328436924E-01
+          0                85           1            77    1     1      -0.5958870440E-05      48    1    9        -0.3160187742E-02      0.1300280009E-01
+          0                86           1            77    1     1      -0.5736885770E-05      48    1    9        -0.3123183269E-02      0.1273616903E-01
+          0                87           1            77    1     1      -0.5530296014E-05      48    1    9        -0.3086845856E-02      0.1248312639E-01
+          0                88           1            77    1     1      -0.5337618628E-05      48    1    9        -0.3051146632E-02      0.1224247779E-01
+          0                89           1            77    1     1      -0.5157510484E-05      48    1    9        -0.3016056493E-02      0.1201316297E-01
+          0                90           1            77    1     1      -0.4988821464E-05      48    1    9        -0.2981550526E-02      0.1179423353E-01
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0                91           1            77    1     1      -0.4830505746E-05      48    1    9        -0.2947604982E-02      0.1158484499E-01
+          0                92           1            77    1     1      -0.4681664266E-05      48    1    9        -0.2914197277E-02      0.1138424028E-01
+          0                93           1            77    1     1      -0.4541479815E-05      48    1    9        -0.2881306689E-02      0.1119173861E-01
+          0                94           1            77    1     1      -0.4409226107E-05      48    1    9        -0.2848914592E-02      0.1100672935E-01
+          0                95           1            77    1     1      -0.4284237195E-05      48    1    9        -0.2817003755E-02      0.1082865910E-01
+          0                96           1            77    1     1      -0.4165962600E-05      48    1    9        -0.2785558579E-02      0.1065702812E-01
+          0                97           1            77    1     1      -0.4053844811E-05      48    1    9        -0.2754561603E-02      0.1049138438E-01
+          0                98           1            77    1     1      -0.3947441893E-05      48    1    9        -0.2724000020E-02      0.1033131652E-01
+          0                99           1            77    1     1      -0.3846312052E-05      48    1    9        -0.2693861723E-02      0.1017645236E-01
+          0               100           1            77    1     1      -0.3750070312E-05      48    1    9        -0.2664130880E-02      0.1002645043E-01
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               101           1            77    1     1      -0.3658364407E-05      48    1    9        -0.2634797478E-02      0.9881000390E-02
+          0               102           1            77    1     1      -0.3570888038E-05      48    1    9        -0.2605849411E-02      0.9739818601E-02
+          0               103           1            77    1     1      -0.3487337078E-05      48    1    9        -0.2577278996E-02      0.9602644510E-02
+          0               104           1            77    1     1      -0.3407458364E-05      48    1    9        -0.2549072728E-02      0.9469240976E-02
+          0               105           1            77    1     1      -0.3331003349E-05      48    1    9        -0.2521225484E-02      0.9339389097E-02
+          0               106           1            77    1     1      -0.3257758290E-05      48    1    9        -0.2493725158E-02      0.9212886859E-02
+          0               107           1            77    1     1      -0.3187513273E-05      48    1    9        -0.2466564532E-02      0.9089550883E-02
+          0               108           1            77    1     1      -0.3120086642E-05      48    1    9        -0.2439737320E-02      0.8969209533E-02
+          0               109           1            77    1     1      -0.3055298076E-05      48    1    9        -0.2413235139E-02      0.8851705746E-02
+          0               110           1            77    1     1      -0.2993006341E-05      48    1    9        -0.2387050772E-02      0.8736893517E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               111           1            77    1     1      -0.2933051375E-05      48    1    9        -0.2361178398E-02      0.8624639162E-02
+          0               112           1            77    1     1      -0.2875304047E-05      48    1    9        -0.2335609868E-02      0.8514817320E-02
+          0               113           1            77    1     1      -0.2819636026E-05      48    1    9        -0.2310341923E-02      0.8407313041E-02
+          0               114           1            77    1     1      -0.2765939845E-05      48    1    9        -0.2285365947E-02      0.8302018274E-02
+          0               115           1            77    1     1      -0.2714099601E-05      48    1    9        -0.2260679612E-02      0.8198834555E-02
+          0               116           1            77    1     1      -0.2664019522E-05      48    1    9        -0.2236275934E-02      0.8097668325E-02
+          0               117           1            77    1     1      -0.2615597997E-05      48    1    9        -0.2212149557E-02      0.7998434209E-02
+          0               118           1            77    1     1      -0.2568768454E-05      48    1    9        -0.2188296523E-02      0.7901050271E-02
+          0               119           1            77    1     1      -0.2523428918E-05      48    1    9        -0.2164711943E-02      0.7805442548E-02
+          0               120           1            77    1     1      -0.2479520624E-05      48    1    9        -0.2141392091E-02      0.7711541505E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               121           1            77    1     1      -0.2436963058E-05      48    1    9        -0.2118333243E-02      0.7619281254E-02
+          0               122           1            77    1     1      -0.2395686475E-05      48    1    9        -0.2095528645E-02      0.7528599692E-02
+          0               123           1            77    1     1      -0.2355648519E-05      48    1    9        -0.2072976902E-02      0.7439439280E-02
+          0               124           1            77    1     1      -0.2316764673E-05      48    1    9        -0.2050674288E-02      0.7351747281E-02
+          0               125           1            77    1     1      -0.2279008020E-05      48    1    9        -0.2028616844E-02      0.7265472678E-02
+          0               126           1            77    1     1      -0.2242305536E-05      48    1    9        -0.2006799914E-02      0.7180568398E-02
+          0               127           1            77    1     1      -0.2206621370E-05      48    1    9        -0.1985221170E-02      0.7096988946E-02
+          0               128           1            77    1     1      -0.2171907498E-05      48    1    9        -0.1963877818E-02      0.7014693580E-02
+          0               129           1            77    1     1      -0.2138122934E-05      48    1    9        -0.1942766830E-02      0.6933641620E-02
+          0               130           1            77    1     1      -0.2105224678E-05      48    1    9        -0.1921883551E-02      0.6853796259E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               131           1            77    1     1      -0.2073176523E-05      48    1    9        -0.1901225885E-02      0.6775121807E-02
+          0               132           1            77    1     1      -0.2041939290E-05      48    1    9        -0.1880790340E-02      0.6697585566E-02
+          0               133           1            77    1     1      -0.2011489805E-05      48    1    9        -0.1860575518E-02      0.6621155609E-02
+          0               134           1            77    1     1      -0.1981783156E-05      48    1    9        -0.1840576995E-02      0.6545801406E-02
+          0               135           1            77    1     1      -0.1952799189E-05      48    1    9        -0.1820793841E-02      0.6471495008E-02
+          0               136           1            77    1     1      -0.1924497463E-05      48    1    9        -0.1801222097E-02      0.6398210580E-02
+          0               137           1            77    1     1      -0.1896863725E-05      48    1    9        -0.1781859202E-02      0.6325922027E-02
+          0               138           1            77    1     1      -0.1869866141E-05      48    1    9        -0.1762703992E-02      0.6254605182E-02
+          0               139           1            77    1     1      -0.1843485343E-05      48    1    9        -0.1743753208E-02      0.6184237792E-02
+          0               140           1            77    1     1      -0.1817693483E-05      48    1    9        -0.1725004287E-02      0.6114797423E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               141           1            77    1     1      -0.1792468993E-05      48    1    9        -0.1706453972E-02      0.6046262926E-02
+          0               142           1            77    1     1      -0.1767788796E-05      48    1    9        -0.1688102493E-02      0.5978613540E-02
+          0               143           1            77    1     1      -0.1743637635E-05      48    1    9        -0.1669945195E-02      0.5911830893E-02
+          0               144           1            77    1     1      -0.1719998780E-05      48    1    9        -0.1651981147E-02      0.5845896898E-02
+          0               145           1            77    1     1      -0.1696850543E-05      48    1    9        -0.1634208718E-02      0.5780795173E-02
+          0               146           1            77    1     1      -0.1674178663E-05      48    1    9        -0.1616623485E-02      0.5716507371E-02
+          0               147           1            77    1     1      -0.1651960786E-05      48    1    9        -0.1599225681E-02      0.5653018661E-02
+          0               148           1            77    1     3      -0.1630182951E-05      48    1    9        -0.1582011115E-02      0.5590312965E-02
+          0               149           1            77    1     1      -0.1608835109E-05      48    1    9        -0.1564980019E-02      0.5528375191E-02
+          0               150           1            77    1     1      -0.1587904957E-05      48    1    9        -0.1548129134E-02      0.5467191459E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               151           1            77    1     1      -0.1567362575E-05      48    1    9        -0.1531456830E-02      0.5406748021E-02
+          0               152           1            77    1     1      -0.1547221202E-05      48    1    9        -0.1514961245E-02      0.5347032148E-02
+          0               153           1            77    1     1      -0.1527446085E-05      48    1    9        -0.1498639584E-02      0.5288031510E-02
+          0               154           1            77    1     1      -0.1508038651E-05      48    1    9        -0.1482491847E-02      0.5229732915E-02
+          0               155           1            77    1     1      -0.1488979459E-05      48    1    9        -0.1466513844E-02      0.5172125625E-02
+          0               156           1            77    1     1      -0.1470271570E-05      48    1    9        -0.1450705109E-02      0.5115197306E-02
+          0               157           1            77    1     1      -0.1451884215E-05      48    1    9        -0.1435064478E-02      0.5058938043E-02
+          0               158           1            77    1     1      -0.1433818087E-05      48    1    9        -0.1419589622E-02      0.5003334986E-02
+          0               159           1            77    1     8      -0.1416066453E-05      48    1    9        -0.1404277515E-02      0.4948379390E-02
+          0               160           1            77    1     1      -0.1398618113E-05      48    1    9        -0.1389128156E-02      0.4894061862E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               161           1            77    1     1      -0.1381469217E-05      48    1    9        -0.1374138519E-02      0.4840371582E-02
+          0               162           1            77    1     1      -0.1364601088E-05      48    1    9        -0.1359308604E-02      0.4787299108E-02
+          0               163           1            77    1     1      -0.1348010829E-05      48    1    9        -0.1344634220E-02      0.4734835818E-02
+          0               164           1            77    1     3      -0.1331687358E-05      48    1    9        -0.1330116065E-02      0.4682972436E-02
+          0               165           1            77    1     1      -0.1315633305E-05      48    1    9        -0.1315750880E-02      0.4631699163E-02
+          0               166           1            77    1     4      -0.1299832114E-05      48    1    9        -0.1301538898E-02      0.4581009569E-02
+          0               167           1            77    1     1      -0.1284286767E-05      48    1    9        -0.1287476858E-02      0.4530895803E-02
+          0               168           1            77    1     1      -0.1268974296E-05      48    1    9        -0.1273563132E-02      0.4481347361E-02
+          0               169           1            77    1     1      -0.1253906614E-05      48    1    9        -0.1259797718E-02      0.4432357411E-02
+          0               170           1            77    1     1      -0.1239065317E-05      48    1    9        -0.1246177591E-02      0.4383919244E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               171           1            77    1     1      -0.1224453305E-05      48    1    9        -0.1232701819E-02      0.4336025661E-02
+          0               172           1            77    1     1      -0.1210055309E-05      48    1    9        -0.1219369471E-02      0.4288667279E-02
+          0               173           1            77    1     1      -0.1195879412E-05      48    1    9        -0.1206177752E-02      0.4241839126E-02
+          0               174           1            77    1     1      -0.1181904431E-05      48    1    9        -0.1193125267E-02      0.4195532510E-02
+          0               175           1            77    1     1      -0.1168136370E-05      48    1    9        -0.1180212945E-02      0.4149742372E-02
+          0               176           1            77    1     1      -0.1154568100E-05      48    1    9        -0.1167436130E-02      0.4104460352E-02
+          0               177           1            77    1     1      -0.1141195029E-05      48    1    9        -0.1154795988E-02      0.4059682075E-02
+          0               178           1            77    1     1      -0.1128011952E-05      48    1    9        -0.1142289024E-02      0.4015398166E-02
+          0               179           1            77    1     1      -0.1115011407E-05      48    1    9        -0.1129915472E-02      0.3971605631E-02
+          0               180           1            77    1     1      -0.1102198354E-05      48    1    9        -0.1117672771E-02      0.3928295417E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               181           1            77    1     1      -0.1089564752E-05      48    1    9        -0.1105560455E-02      0.3885464296E-02
+          0               182           1            77    1     1      -0.1077098832E-05      48    1    9        -0.1093576662E-02      0.3843105372E-02
+          0               183           1            77    1     1      -0.1064805476E-05      48    1    9        -0.1081719995E-02      0.3801211262E-02
+          0               184           1            77    1     1      -0.1052682044E-05      48    1    9        -0.1069988590E-02      0.3759777287E-02
+          0               185           1            77    1     5      -0.1040718906E-05      48    1    9        -0.1058383146E-02      0.3718799729E-02
+          0               186           1            77    1     1      -0.1028914993E-05      48    1    9        -0.1046900637E-02      0.3678269904E-02
+          0               187           1            77    1     1      -0.1017271280E-05      48    1    9        -0.1035541296E-02      0.3638184221E-02
+          0               188           1            77    1     4      -0.1005782284E-05      48    1    9        -0.1024301630E-02      0.3598538022E-02
+          0               189           1            77    1     1      -0.9944461467E-06      48    1    9        -0.1013180707E-02      0.3559324269E-02
+          0               190           1            77    1     1      -0.9832434989E-06      48    1    9        -0.1002178527E-02      0.3520539267E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               191           1            77    1     1      -0.9722028920E-06      48    1    9        -0.9912941605E-03      0.3482176531E-02
+          0               192           1            77    1     8      -0.9612861186E-06      48    1    9        -0.9805262089E-03      0.3444233184E-02
+          0               193           1            77    1     1      -0.9505230619E-06      48    1    9        -0.9698721115E-03      0.3406703662E-02
+          0               194           1            77    1     2      -0.9398972140E-06      48    1    9        -0.9593316354E-03      0.3369582685E-02
+          0               195           1            77    1     1      -0.9294073491E-06      48    1    9        -0.9489040822E-03      0.3332866575E-02
+          0               196           1            77    1     8      -0.9190376638E-06      48    1    9        -0.9385866579E-03      0.3296548886E-02
+          0               197           1            77    1     4      -0.9088049508E-06      48    1    9        -0.9283791296E-03      0.3260625229E-02
+          0               198           1            77    1     1      -0.8986978555E-06      48    1    9        -0.9182812646E-03      0.3225091710E-02
+          0               199           1            77    1     1      -0.8887216478E-06      48    1    9        -0.9082909673E-03      0.3189944601E-02
+          0               200           1            77    1     8      -0.8788563796E-06      48    1    9        -0.8984075394E-03      0.3155179666E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               201           1            77    1     1      -0.8691258212E-06      48    1    9        -0.8886288851E-03      0.3120790304E-02
+          0               202           1            77    1     1      -0.8595072167E-06      48    1    9        -0.8789540734E-03      0.3086775262E-02
+          0               203           1            77    1     1      -0.8500034243E-06      48    1    9        -0.8693838026E-03      0.3053127123E-02
+          0               204           1            77    1     1      -0.8406184547E-06      48    1    9        -0.8599145804E-03      0.3019844438E-02
+          0               205           1            77    1     1      -0.8313460372E-06      48    1    9        -0.8505466394E-03      0.2986921466E-02
+          0               206           1            77    1     1      -0.8221846805E-06      48    1    9        -0.8412795141E-03      0.2954355156E-02
+          0               207           1            77    1     1      -0.8131250150E-06      48    1    9        -0.8321108762E-03      0.2922140652E-02
+          0               208           1            77    1     2      -0.8041863360E-06      48    1    9        -0.8230407257E-03      0.2890275493E-02
+          0               209           1            77    1     3      -0.7953483743E-06      48    1    9        -0.8140665013E-03      0.2858755357E-02
+          0               210           1            77    1     1      -0.7866102073E-06      48    1    9        -0.8051893674E-03      0.2827575995E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               211           1            77    1     1      -0.7779786499E-06      48    1    9        -0.7964074612E-03      0.2796731718E-02
+          0               212           1            77    1     1      -0.7694479225E-06      48    1    9        -0.7877172902E-03      0.2766221931E-02
+          0               213           1            77    1     8      -0.7610158781E-06      48    1    9        -0.7791232783E-03      0.2736042155E-02
+          0               214           1            77    1     7      -0.7526846892E-06      48    1    9        -0.7706196047E-03      0.2706188159E-02
+          0               215           1            77    1     1      -0.7444510917E-06      48    1    9        -0.7622076664E-03      0.2676656333E-02
+          0               216           1            77    1     2      -0.7363086137E-06      48    1    9        -0.7538851351E-03      0.2647443181E-02
+          0               217           1            77    1     8      -0.7282583803E-06      48    1    9        -0.7456517778E-03      0.2618545134E-02
+          0               218           1            77    1     1      -0.7203118939E-06      48    1    9        -0.7375064306E-03      0.2589959087E-02
+          0               219           1            77    1     5      -0.7124415295E-06      48    1    9        -0.7294488605E-03      0.2561682571E-02
+          0               220           1            77    1     2      -0.7046746436E-06      48    1    9        -0.7214776706E-03      0.2533710627E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               221           1            77    1     1      -0.6969888292E-06      48    1    9        -0.7135909982E-03      0.2506040201E-02
+          0               222           1            77    1     1      -0.6893937157E-06      48    1    9        -0.7057900075E-03      0.2478668135E-02
+          0               223           1            77    1     4      -0.6818776643E-06      48    1    9        -0.6980721373E-03      0.2451591355E-02
+          0               224           1            77    1     1      -0.6744566899E-06      48    1    9        -0.6904373877E-03      0.2424806176E-02
+          0               225           1            77    1     1      -0.6671175289E-06      48    1    9        -0.6828845944E-03      0.2398311587E-02
+          0               226           1            77    1     1      -0.6598580205E-06      48    1    9        -0.6754125934E-03      0.2372101998E-02
+          0               227           1            77    1     8      -0.6526795023E-06      48    1    9        -0.6680206861E-03      0.2346174349E-02
+          0               228           1            77    1     1      -0.6455842151E-06      48    1    9        -0.6607079413E-03      0.2320527054E-02
+          0               229           1            77    1     1      -0.6385662802E-06      48    1    9        -0.6534748245E-03      0.2295155313E-02
+          0               230           1            77    1     1      -0.6316311136E-06      48    1    9        -0.6463185418E-03      0.2270057932E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               231           1            77    1     8      -0.6247662637E-06      48    1    9        -0.6392397918E-03      0.2245231539E-02
+          0               232           1            77    1     1      -0.6179846198E-06      48    1    9        -0.6322362460E-03      0.2220671962E-02
+          0               233           1            77    1     1      -0.6112723177E-06      48    1    9        -0.6253090687E-03      0.2196377443E-02
+          0               234           1            77    1     1      -0.6046413113E-06      48    1    9        -0.6184561644E-03      0.2172345148E-02
+          0               235           1            77    1     8      -0.5980788148E-06      48    1    9        -0.6116763689E-03      0.2148572926E-02
+          0               236           1            77    1     1      -0.5915926663E-06      48    1    9        -0.6049694493E-03      0.2125056395E-02
+          0               237           1            77    1     1      -0.5851754583E-06      48    1    9        -0.5983361043E-03      0.2101793912E-02
+          0               238           1            77    1     8      -0.5788345615E-06      48    1    9        -0.5917728413E-03      0.2078780813E-02
+          0               239           1            77    1     1      -0.5725602164E-06      48    1    9        -0.5852808245E-03      0.2056017514E-02
+          0               240           1            77    1     2      -0.5663507200E-06      48    1    9        -0.5788579583E-03      0.2033498856E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               241           1            77    1     1      -0.5602061399E-06      48    1    9        -0.5725040101E-03      0.2011222542E-02
+          0               242           1            77    1     1      -0.5541388403E-06      48    1    9        -0.5662203766E-03      0.1989186547E-02
+          0               243           1            77    1     1      -0.5481403221E-06      48    1    9        -0.5600033328E-03      0.1967389232E-02
+          0               244           1            77    1     6      -0.5421996206E-06      48    1    9        -0.5538521800E-03      0.1945827580E-02
+          0               245           1            77    1     2      -0.5363215402E-06      48    1    9        -0.5477690138E-03      0.1924497850E-02
+          0               246           1            77    1     4      -0.5305175469E-06      48    1    9        -0.5417505745E-03      0.1903397226E-02
+          0               247           1            77    1     1      -0.5247674076E-06      48    1    9        -0.5357975606E-03      0.1882526177E-02
+          0               248           1            77    1     8      -0.5190868231E-06      48    1    9        -0.5299085751E-03      0.1861879433E-02
+          0               249           1            77    1     2      -0.5134627931E-06      48    1    9        -0.5240822211E-03      0.1841455458E-02
+          0               250           1            77    1     1      -0.5079091779E-06      48    1    9        -0.5183198955E-03      0.1821252196E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               251           1            77    1     8      -0.5024062005E-06      48    1    9        -0.5126197357E-03      0.1801267794E-02
+          0               252           1            77    1     1      -0.4969662014E-06      48    1    9        -0.5069815088E-03      0.1781498018E-02
+          0               253           1            77    1     2      -0.4915860231E-06      48    1    9        -0.5014033522E-03      0.1761941684E-02
+          0               254           1            77    1     1      -0.4862632667E-06      48    1    9        -0.4958850332E-03      0.1742596961E-02
+          0               255           1            77    1     1      -0.4810030700E-06      48    1    9        -0.4904279485E-03      0.1723461486E-02
+          0               256           1            77    1     1      -0.4757873402E-06      48    1    9        -0.4850279074E-03      0.1704531986E-02
+          0               257           1            77    1     1      -0.4706452454E-06      48    1    9        -0.4796874709E-03      0.1685807036E-02
+          0               258           1            77    1     8      -0.4655469449E-06      48    1    9        -0.4744036123E-03      0.1667284243E-02
+          0               259           1            77    1     1      -0.4605092137E-06      48    1    9        -0.4691781942E-03      0.1648963453E-02
+          0               260           1            77    1     7      -0.4555209101E-06      48    1    9        -0.4640084226E-03      0.1630838355E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               261           1            77    1     7      -0.4505904014E-06      48    1    9        -0.4588947631E-03      0.1612910120E-02
+          0               262           1            77    1     5      -0.4457121646E-06      48    1    9        -0.4538374487E-03      0.1595176208E-02
+          0               263           1            77    1     1      -0.4408830318E-06      48    1    9        -0.4488332197E-03      0.1577632802E-02
+          0               264           1            77    1     5      -0.4361061117E-06      48    1    9        -0.4438837059E-03      0.1560278814E-02
+          0               265           1            77    1     8      -0.4313905762E-06      48    1    9        -0.4389884416E-03      0.1543113285E-02
+          0               266           1            77    1     1      -0.4267152906E-06      48    1    9        -0.4341457970E-03      0.1526135726E-02
+          0               267           1            77    1     8      -0.4221019868E-06      48    1    9        -0.4293560050E-03      0.1509338867E-02
+          0               268           1            77    1     3      -0.4175214618E-06      48    1    9        -0.4246172030E-03      0.1492725110E-02
+          0               269           1            77    1     8      -0.4130067101E-06      48    1    9        -0.4199310206E-03      0.1476289776E-02
+          0               270           1            77    1     1      -0.4085326622E-06      48    1    9        -0.4152941983E-03      0.1460033249E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               271           1            77    1     1      -0.4041049694E-06      48    1    9        -0.4107083660E-03      0.1443952447E-02
+          0               272           1            77    1     8      -0.3997201657E-06      48    1    9        -0.4061716609E-03      0.1428045422E-02
+          0               273           1            77    1     8      -0.3953961160E-06      48    1    9        -0.4016850144E-03      0.1412309680E-02
+          0               274           1            77    1     2      -0.3911114769E-06      48    1    9        -0.3972470295E-03      0.1396746698E-02
+          0               275           1            77    1     1      -0.3868667399E-06      48    1    9        -0.3928565420E-03      0.1381350978E-02
+          0               276           1            77    1     8      -0.3826832676E-06      48    1    9        -0.3885149490E-03      0.1366122416E-02
+          0               277           1            77    1     1      -0.3785328335E-06      48    1    9        -0.3842192236E-03      0.1351059857E-02
+          0               278           1            77    1     8      -0.3744320389E-06      48    1    9        -0.3799700644E-03      0.1336159148E-02
+          0               279           1            77    1     1      -0.3703711951E-06      48    1    9        -0.3757677041E-03      0.1321420206E-02
+          0               280           1            77    1     1      -0.3663520314E-06      48    1    9        -0.3716107458E-03      0.1306840383E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               281           1            77    1     8      -0.3623827188E-06      48    1    9        -0.3674982581E-03      0.1292419085E-02
+          0               282           1            77    1     1      -0.3584529092E-06      48    1    9        -0.3634316381E-03      0.1278155127E-02
+          0               283           1            77    1     8      -0.3545671351E-06      48    1    9        -0.3594090231E-03      0.1264044618E-02
+          0               284           1            77    1     1      -0.3507195930E-06      48    1    9        -0.3554299474E-03      0.1250088249E-02
+          0               285           1            77    1     5      -0.3469119033E-06      48    1    9        -0.3514932469E-03      0.1236281953E-02
+          0               286           1            77    1     1      -0.3431508953E-06      48    1    9        -0.3476000857E-03      0.1222625829E-02
+          0               287           1            77    1     4      -0.3394245720E-06      48    1    9        -0.3437497653E-03      0.1209118635E-02
+          0               288           1            77    1     1      -0.3357436236E-06      48    1    9        -0.3399404231E-03      0.1195757711E-02
+          0               289           1            77    1     1      -0.3320998015E-06      48    1    9        -0.3361727577E-03      0.1182541786E-02
+          0               290           1            77    1     8      -0.3284884229E-06      48    1    9        -0.3324470017E-03      0.1169469270E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               291           1            77    1     1      -0.3249292202E-06      48    1    9        -0.3287605941E-03      0.1156538481E-02
+          0               292           1            77    1     1      -0.3214008949E-06      48    1    9        -0.3251151647E-03      0.1143749293E-02
+          0               293           1            77    1     1      -0.3179062689E-06      48    1    9        -0.3215083852E-03      0.1131098445E-02
+          0               294           1            77    1     1      -0.3144558233E-06      48    1    9        -0.3179416526E-03      0.1118584901E-02
+          0               295           1            77    1     1      -0.3110387118E-06      48    1    9        -0.3144142684E-03      0.1106206787E-02
+          0               296           1            77    1     1      -0.3076553151E-06      48    1    9        -0.3109246027E-03      0.1093963985E-02
+          0               297           1            77    1     7      -0.3043140764E-06      48    1    9        -0.3074735869E-03      0.1081854195E-02
+          0               298           1            77    1     1      -0.3010100173E-06      48    1    9        -0.3040595911E-03      0.1069877144E-02
+          0               299           1            77    1     8      -0.2977391053E-06      48    1    9        -0.3006830812E-03      0.1058029658E-02
+          0               300           1            77    1     1      -0.2944999695E-06      48    1    9        -0.2973431256E-03      0.1046310299E-02
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               301           1            77    1     1      -0.2912940124E-06      48    1    9        -0.2940394916E-03      0.1034718284E-02
+          0               302           1            77    1     1      -0.2881304498E-06      48    1    9        -0.2907726448E-03      0.1023252365E-02
+          0               303           1            77    1     1      -0.2849909358E-06      48    1    9        -0.2875404898E-03      0.1011912330E-02
+          0               304           1            77    1     8      -0.2818911487E-06      48    1    9        -0.2843439579E-03      0.1000695166E-02
+          0               305           1            77    1     4      -0.2788282221E-06      48    1    9        -0.2811832819E-03      0.9896010261E-03
+          0               306           1            77    1     8      -0.2757892421E-06      48    1    9        -0.2780561335E-03      0.9786275046E-03
+          0               307           1            77    1     1      -0.2727920862E-06      48    1    9        -0.2749636769E-03      0.9677729755E-03
+          0               308           1            77    1     2      -0.2698171516E-06      48    1    9        -0.2719049808E-03      0.9570374335E-03
+          0               309           1            77    1     1      -0.2668822111E-06      48    1    9        -0.2688798122E-03      0.9464179707E-03
+          0               310           1            77    1     1      -0.2639757330E-06      48    1    9        -0.2658863086E-03      0.9359151849E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               311           1            77    1     3      -0.2611024837E-06      48    1    9        -0.2629260998E-03      0.9255260160E-03
+          0               312           1            77    1     1      -0.2582548373E-06      48    1    9        -0.2599991858E-03      0.9152503004E-03
+          0               313           1            77    1     8      -0.2554422410E-06      48    1    9        -0.2571037039E-03      0.9050864991E-03
+          0               314           1            77    1     1      -0.2526577257E-06      48    1    9        -0.2542396542E-03      0.8950335447E-03
+          0               315           1            77    1     5      -0.2499040852E-06      48    1    9        -0.2514075022E-03      0.8850912665E-03
+          0               316           1            77    1     1      -0.2471821756E-06      48    1    9        -0.2486070152E-03      0.8752565236E-03
+          0               317           1            77    1     8      -0.2444832666E-06      48    1    9        -0.2458356321E-03      0.8655292218E-03
+          0               318           1            77    1     4      -0.2418173972E-06      48    1    9        -0.2430952154E-03      0.8559084777E-03
+          0               319           1            77    1     8      -0.2391844734E-06      48    1    9        -0.2403850667E-03      0.8463920738E-03
+          0               320           1            77    1     7      -0.2365680732E-06      48    1    9        -0.2377035562E-03      0.8369795720E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               321           1            77    1     8      -0.2339910160E-06      48    1    9        -0.2350520808E-03      0.8276706753E-03
+          0               322           1            77    1     1      -0.2314374271E-06      48    1    9        -0.2324294765E-03      0.8184631149E-03
+          0               323           1            77    1     3      -0.2289062921E-06      48    1    9        -0.2298357431E-03      0.8093557306E-03
+          0               324           1            77    1     8      -0.2264100037E-06      48    1    9        -0.2272708807E-03      0.8003483847E-03
+          0               325           1            77    1     1      -0.2239348391E-06      48    1    9        -0.2247337252E-03      0.7914395008E-03
+          0               326           1            77    1     1      -0.2214918750E-06      48    1    9        -0.2222249750E-03      0.7826289781E-03
+          0               327           1            77    1     8      -0.2190720377E-06      48    1    9        -0.2197439317E-03      0.7739139275E-03
+          0               328           1            77    1     1      -0.2166797735E-06      48    1    9        -0.2172887325E-03      0.7652943191E-03
+          0               329           1            77    1     1      -0.2143090833E-06      48    1    9        -0.2148612402E-03      0.7567695277E-03
+          0               330           1            77    1     8      -0.2119717840E-06      48    1    9        -0.2124607563E-03      0.7483369421E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               331           1            77    1     1      -0.2096475385E-06      48    1    9        -0.2100856509E-03      0.7399972928E-03
+          0               332           1            77    1     1      -0.2073615876E-06      48    1    9        -0.2077375539E-03      0.7317480860E-03
+          0               333           1            77    1     8      -0.2050872071E-06      48    1    9        -0.2054143697E-03      0.7235893465E-03
+          0               334           1            77    1     8      -0.2028450220E-06      48    1    9        -0.2031177282E-03      0.7155210732E-03
+          0               335           1            77    1     1      -0.2006278921E-06      48    1    9        -0.2008459996E-03      0.7075405213E-03
+          0               336           1            77    1     8      -0.1984312052E-06      48    1    9        -0.1985984854E-03      0.6996473958E-03
+          0               337           1            77    1     1      -0.1962631566E-06      48    1    9        -0.1963763498E-03      0.6918410683E-03
+          0               338           1            77    1     2      -0.1941109840E-06      48    1    9        -0.1941788942E-03      0.6841205807E-03
+          0               339           1            77    1     1      -0.1919845357E-06      48    1    9        -0.1920047216E-03      0.6764829490E-03
+          0               340           1            77    1     8      -0.1898819508E-06      48    1    9        -0.1898552291E-03      0.6689307338E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               341           1            77    1     8      -0.1878032408E-06      48    1    9        -0.1877287868E-03      0.6614614547E-03
+          0               342           1            77    1     6      -0.1857473151E-06      48    1    9        -0.1856263261E-03      0.6540740089E-03
+          0               343           1            77    1     8      -0.1837109881E-06      48    1    9        -0.1835469157E-03      0.6467670258E-03
+          0               344           1            77    1     2      -0.1816980173E-06      48    1    9        -0.1814898569E-03      0.6395403781E-03
+          0               345           1            77    1     1      -0.1797057310E-06      48    1    9        -0.1794560812E-03      0.6323934491E-03
+          0               346           1            77    1     8      -0.1777320806E-06      48    1    9        -0.1774439588E-03      0.6253235221E-03
+          0               347           1            77    1     1      -0.1757862659E-06      48    1    9        -0.1754548866E-03      0.6183323412E-03
+          0               348           1            77    1     2      -0.1738619758E-06      48    1    9        -0.1734870020E-03      0.6114182384E-03
+          0               349           1            77    1     8      -0.1719515715E-06      48    1    9        -0.1715407707E-03      0.6045797725E-03
+          0               350           1            77    1     1      -0.1700580757E-06      48    1    9        -0.1696164254E-03      0.5978163567E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               351           1            77    1     8      -0.1681969098E-06      48    1    9        -0.1677132677E-03      0.5911260818E-03
+          0               352           1            77    1     1      -0.1663553959E-06      48    1    9        -0.1658319961E-03      0.5845118899E-03
+          0               353           1            77    1     5      -0.1645232403E-06      48    1    9        -0.1639707480E-03      0.5779703665E-03
+          0               354           1            77    1     2      -0.1627210203E-06      48    1    9        -0.1621292904E-03      0.5714985080E-03
+          0               355           1            77    1     7      -0.1609289470E-06      48    1    9        -0.1603076234E-03      0.5650997007E-03
+          0               356           1            77    1     1      -0.1591611990E-06      48    1    9        -0.1585064456E-03      0.5587689301E-03
+          0               357           1            77    1     1      -0.1574118597E-06      48    1    9        -0.1567257568E-03      0.5525093521E-03
+          0               358           1            77    1     1      -0.1556865355E-06      48    1    9        -0.1549643930E-03      0.5463185746E-03
+          0               359           1            77    1     8      -0.1539732674E-06      48    1    9        -0.1532232855E-03      0.5401969764E-03
+          0               360           1            77    1     8      -0.1522784342E-06      48    1    9        -0.1515005715E-03      0.5341412000E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               361           1            77    1     1      -0.1506089710E-06      48    1    9        -0.1497971825E-03      0.5281521752E-03
+          0               362           1            77    1     8      -0.1489402383E-06      48    1    9        -0.1481126528E-03      0.5222294133E-03
+          0               363           1            77    1     4      -0.1473120022E-06      48    1    9        -0.1464472152E-03      0.5163710561E-03
+          0               364           1            77    1     8      -0.1456845837E-06      48    1    9        -0.1447997056E-03      0.5105798213E-03
+          0               365           1            77    1     5      -0.1440836049E-06      48    1    9        -0.1431705896E-03      0.5048509092E-03
+          0               366           1            77    1     8      -0.1425005979E-06      48    1    9        -0.1415589359E-03      0.4991851700E-03
+          0               367           1            77    1     3      -0.1409314042E-06      48    1    9        -0.1399652101E-03      0.4935825657E-03
+          0               368           1            77    1     1      -0.1393731536E-06      48    1    9        -0.1383889467E-03      0.4880406970E-03
+          0               369           1            77    1     1      -0.1378473571E-06      48    1    9        -0.1368308440E-03      0.4825593015E-03
+          0               370           1            77    1     8      -0.1363213051E-06      48    1    9        -0.1352892723E-03      0.4771399531E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               371           1            77    1     1      -0.1348200157E-06      48    1    9        -0.1337651629E-03      0.4717788941E-03
+          0               372           1            77    1     8      -0.1333347170E-06      48    1    9        -0.1322582830E-03      0.4664786801E-03
+          0               373           1            77    1     1      -0.1318656012E-06      48    1    9        -0.1307670027E-03      0.4612363922E-03
+          0               374           1            77    1     8      -0.1304117531E-06      48    1    9        -0.1292931847E-03      0.4560509604E-03
+          0               375           1            77    1     1      -0.1289760598E-06      48    1    9        -0.1278358977E-03      0.4509242335E-03
+          0               376           1            77    1     1      -0.1275566098E-06      48    1    9        -0.1263946760E-03      0.4458540065E-03
+          0               377           1            77    1     8      -0.1261383787E-06      48    1    9        -0.1249683555E-03      0.4408392519E-03
+          0               378           1            77    1     8      -0.1247515098E-06      48    1    9        -0.1235581003E-03      0.4358782420E-03
+          0               379           1            77    1     1      -0.1233760675E-06      48    1    9        -0.1221643761E-03      0.4309746139E-03
+          0               380           1            77    1     1      -0.1220078079E-06      48    1    9        -0.1207853202E-03      0.4261238558E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               381           1            77    1     1      -0.1206668387E-06      48    1    9        -0.1194213983E-03      0.4213269573E-03
+          0               382           1            77    1     8      -0.1193325111E-06      48    1    9        -0.1180730760E-03      0.4165836498E-03
+          0               383           1            77    1     8      -0.1180182845E-06      48    1    9        -0.1167394221E-03      0.4118937716E-03
+          0               384           1            77    1     1      -0.1167114495E-06      48    1    9        -0.1154216006E-03      0.4072534250E-03
+          0               385           1            77    1     8      -0.1154133039E-06      48    1    9        -0.1141175162E-03      0.4026648069E-03
+          0               386           1            77    1     2      -0.1141468936E-06      48    1    9        -0.1128278673E-03      0.3981276249E-03
+          0               387           1            77    1     8      -0.1128811613E-06      48    1    9        -0.1115517225E-03      0.3936410955E-03
+          0               388           1            77    1     1      -0.1116354194E-06      48    1    9        -0.1102918759E-03      0.3892036448E-03
+          0               389           1            77    1     5      -0.1104013891E-06      48    1    9        -0.1090448350E-03      0.3848161265E-03
+          0               390           1            77    1     8      -0.1091802601E-06      48    1    9        -0.1078108326E-03      0.3804767396E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               391           1            77    1     1      -0.1079734820E-06      48    1    9        -0.1065917313E-03      0.3761854471E-03
+          0               392           1            77    1     6      -0.1067746945E-06      48    1    9        -0.1053852029E-03      0.3719415611E-03
+          0               393           1            77    1     7      -0.1055896400E-06      48    1    9        -0.1041933428E-03      0.3677442823E-03
+          0               394           1            77    1     1      -0.1044266200E-06      48    1    9        -0.1030140556E-03      0.3635935700E-03
+          0               395           1            77    1     2      -0.1032710896E-06      48    1    9        -0.1018482726E-03      0.3594901754E-03
+          0               396           1            77    1     2      -0.1021211262E-06      48    1    9        -0.1006950624E-03      0.3554312004E-03
+          0               397           1            77    1     1      -0.1009908477E-06      48    1    9        -0.9955465794E-04      0.3514172733E-03
+          0               398           1            77    1     8      -0.9987574275E-07      48    1    9        -0.9842799045E-04      0.3474486627E-03
+          0               399           1            77    1     1      -0.9876503443E-07      48    1    9        -0.9731180035E-04      0.3435237547E-03
+          0               400           1            77    1     1      -0.9767740540E-07      48    1    9        -0.9620981291E-04      0.3396429912E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               401           1            77    1     8      -0.9658791825E-07      48    1    9        -0.9511923417E-04      0.3358040804E-03
+          0               402           1            77    1     3      -0.9552126475E-07      48    1    9        -0.9404099546E-04      0.3320083692E-03
+          0               403           1            77    1     7      -0.9445639329E-07      48    1    9        -0.9297439829E-04      0.3282548318E-03
+          0               404           1            77    1     6      -0.9341659558E-07      48    1    9        -0.9192014113E-04      0.3245412288E-03
+          0               405           1            77    1     8      -0.9236957542E-07      48    1    9        -0.9087729268E-04      0.3208719270E-03
+          0               406           1            77    1     1      -0.9135435731E-07      48    1    9        -0.8984655142E-04      0.3172408127E-03
+          0               407           1            77    1     1      -0.9033388889E-07      48    1    9        -0.8882675320E-04      0.3136515027E-03
+          0               408           1            77    1     8      -0.8933217800E-07      48    1    9        -0.8781906217E-04      0.3101017962E-03
+          0               409           1            77    1     1      -0.8833795028E-07      48    1    9        -0.8682208136E-04      0.3065921796E-03
+          0               410           1            77    1     4      -0.8736008129E-07      48    1    9        -0.8583627641E-04      0.3031205599E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               411           1            77    1     8      -0.8639245273E-07      48    1    9        -0.8486164734E-04      0.2996885709E-03
+          0               412           1            77    1     1      -0.8543013081E-07      48    1    9        -0.8389749564E-04      0.2962933073E-03
+          0               413           1            77    1     8      -0.8447842889E-07      48    1    9        -0.8294405416E-04      0.2929364543E-03
+          0               414           1            77    1     4      -0.8353980347E-07      48    1    9        -0.8200295269E-04      0.2896177216E-03
+          0               415           1            77    1     2      -0.8260894830E-07      48    1    9        -0.8107046597E-04      0.2863351644E-03
+          0               416           1            77    1     8      -0.8169482152E-07      48    1    9        -0.8014892228E-04      0.2830897838E-03
+          0               417           1            77    1     1      -0.8078602250E-07      48    1    9        -0.7923715748E-04      0.2798802750E-03
+          0               418           1            77    1     3      -0.7988437497E-07      48    1    9        -0.7833633572E-04      0.2767066769E-03
+          0               419           1            77    1     1      -0.7899148077E-07      48    1    9        -0.7744552568E-04      0.2735677999E-03
+          0               420           1            77    1     8      -0.7812054228E-07      48    1    9        -0.7656402886E-04      0.2704644410E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               421           1            77    1     8      -0.7724810670E-07      48    1    9        -0.7569324225E-04      0.2673963968E-03
+          0               422           1            77    1     2      -0.7638741293E-07      48    1    9        -0.7483200170E-04      0.2643611376E-03
+          0               423           1            77    1     1      -0.7553697868E-07      48    1    9        -0.7397960871E-04      0.2613599033E-03
+          0               424           1            77    1     1      -0.7469636237E-07      48    1    9        -0.7313769311E-04      0.2583931648E-03
+          0               425           1            77    1     8      -0.7386210839E-07      48    1    9        -0.7230322808E-04      0.2554576913E-03
+          0               426           1            77    1     6      -0.7303983885E-07      48    1    9        -0.7148087025E-04      0.2525565444E-03
+          0               427           1            77    1     1      -0.7222405108E-07      48    1    9        -0.7066712715E-04      0.2496876553E-03
+          0               428           1            77    1     2      -0.7142632473E-07      48    1    9        -0.6986106746E-04      0.2468505004E-03
+          0               429           1            77    1     8      -0.7062321373E-07      48    1    9        -0.6906455383E-04      0.2440450300E-03
+          0               430           1            77    1     8      -0.6983783865E-07      48    1    9        -0.6827805191E-04      0.2412703695E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               431           1            77    1     8      -0.6905460388E-07      48    1    9        -0.6749853492E-04      0.2385275000E-03
+          0               432           1            77    1     1      -0.6829325108E-07      48    1    9        -0.6672926247E-04      0.2358144129E-03
+          0               433           1            77    1     4      -0.6752164188E-07      48    1    9        -0.6596813910E-04      0.2331326596E-03
+          0               434           1            77    1     1      -0.6676596387E-07      48    1    9        -0.6521609612E-04      0.2304789345E-03
+          0               435           1            77    1     1      -0.6602488295E-07      48    1    9        -0.6447127089E-04      0.2278571972E-03
+          0               436           1            77    1     5      -0.6528469091E-07      48    1    9        -0.6373669021E-04      0.2252651946E-03
+          0               437           1            77    1     8      -0.6455936628E-07      48    1    9        -0.6300909445E-04      0.2227011318E-03
+          0               438           1            77    1     1      -0.6383940946E-07      48    1    9        -0.6228894927E-04      0.2201666112E-03
+          0               439           1            77    1     1      -0.6312448743E-07      48    1    9        -0.6157835014E-04      0.2176591791E-03
+          0               440           1            77    1     5      -0.6241892844E-07      48    1    9        -0.6087496877E-04      0.2151793422E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               441           1            77    1     8      -0.6172124499E-07      48    1    9        -0.6017903797E-04      0.2127281274E-03
+          0               442           1            77    1     1      -0.6103270907E-07      48    1    9        -0.5949125625E-04      0.2103045344E-03
+          0               443           1            77    1     1      -0.6034743017E-07      48    1    9        -0.5881092511E-04      0.2079074205E-03
+          0               444           1            77    1     8      -0.5967582063E-07      48    1    9        -0.5813967437E-04      0.2055374093E-03
+          0               445           1            77    1     1      -0.5900799694E-07      48    1    9        -0.5747424439E-04      0.2031941723E-03
+          0               446           1            77    1     1      -0.5834157205E-07      48    1    9        -0.5681742914E-04      0.2008767968E-03
+          0               447           1            77    1     8      -0.5769431656E-07      48    1    9        -0.5616759881E-04      0.1985855331E-03
+          0               448           1            77    1     6      -0.5704760799E-07      48    1    9        -0.5552498624E-04      0.1963205997E-03
+          0               449           1            77    1     1      -0.5641022229E-07      48    1    9        -0.5488842726E-04      0.1940800528E-03
+          0               450           1            77    1     1      -0.5577361097E-07      48    1    9        -0.5426118150E-04      0.1918652529E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               451           1            77    1     5      -0.5515032552E-07      48    1    9        -0.5364022218E-04      0.1896751375E-03
+          0               452           1            77    1     8      -0.5453174196E-07      48    1    9        -0.5302624777E-04      0.1875092860E-03
+          0               453           1            77    1     8      -0.5392339265E-07      48    1    9        -0.5241972394E-04      0.1853686923E-03
+          0               454           1            77    1     2      -0.5331967662E-07      48    1    9        -0.5181878805E-04      0.1832516914E-03
+          0               455           1            77    1     1      -0.5272040921E-07      48    1    9        -0.5122530274E-04      0.1811578855E-03
+          0               456           1            77    1     8      -0.5212697568E-07      48    1    9        -0.5063833669E-04      0.1790881569E-03
+          0               457           1            77    1     1      -0.5155063270E-07      48    1    9        -0.5005742423E-04      0.1770407349E-03
+          0               458           1            77    1     4      -0.5096330516E-07      48    1    9        -0.4948419519E-04      0.1750177845E-03
+          0               459           1            77    1     3      -0.5039771297E-07      48    1    9        -0.4891725257E-04      0.1730164734E-03
+          0               460           1            77    1     8      -0.4982820594E-07      48    1    9        -0.4835613072E-04      0.1710386907E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               461           1            77    1     2      -0.4927412396E-07      48    1    9        -0.4780129530E-04      0.1690826417E-03
+          0               462           1            77    1     1      -0.4871392202E-07      48    1    9        -0.4725251347E-04      0.1671484071E-03
+          0               463           1            77    1     8      -0.4817308217E-07      48    1    9        -0.4671094939E-04      0.1652349286E-03
+          0               464           1            77    1     1      -0.4763065350E-07      48    1    9        -0.4617427476E-04      0.1633444511E-03
+          0               465           1            77    1     1      -0.4709206327E-07      48    1    9        -0.4564411938E-04      0.1614740875E-03
+          0               466           1            77    1     8      -0.4656783384E-07      48    1    9        -0.4512094893E-04      0.1596252641E-03
+          0               467           1            77    1     1      -0.4604145846E-07      48    1    9        -0.4460243508E-04      0.1577976724E-03
+          0               468           1            77    1     2      -0.4552671817E-07      48    1    9        -0.4409020767E-04      0.1559900082E-03
+          0               469           1            77    1     8      -0.4501163223E-07      48    1    9        -0.4358310252E-04      0.1542028002E-03
+          0               470           1            77    1     8      -0.4450822595E-07      48    1    9        -0.4308368079E-04      0.1524360102E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               471           1            77    1     8      -0.4400264156E-07      48    1    9        -0.4258821718E-04      0.1506888167E-03
+          0               472           1            77    1     1      -0.4351413962E-07      48    1    9        -0.4209741019E-04      0.1489606930E-03
+          0               473           1            77    1     8      -0.4301949075E-07      48    1    9        -0.4161405377E-04      0.1472539829E-03
+          0               474           1            77    1     8      -0.4253507320E-07      48    1    9        -0.4113535397E-04      0.1455644964E-03
+          0               475           1            77    1     1      -0.4206111665E-07      48    1    9        -0.4066270776E-04      0.1438958113E-03
+          0               476           1            77    1     8      -0.4158450215E-07      48    1    9        -0.4019448534E-04      0.1422454749E-03
+          0               477           1            77    1     1      -0.4111359155E-07      48    1    9        -0.3973278217E-04      0.1406129814E-03
+          0               478           1            77    1     8      -0.4065536396E-07      48    1    9        -0.3927596845E-04      0.1389985743E-03
+          0               479           1            77    1     7      -0.4019677050E-07      48    1    9        -0.3882264718E-04      0.1374033900E-03
+          0               480           1            77    1     1      -0.3974403927E-07      48    1    9        -0.3837607801E-04      0.1358255388E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               481           1            77    1     2      -0.3929083129E-07      48    1    9        -0.3793369979E-04      0.1342660410E-03
+          0               482           1            77    1     7      -0.3885155814E-07      48    1    9        -0.3749807365E-04      0.1327238349E-03
+          0               483           1            77    1     1      -0.3841571607E-07      48    1    9        -0.3706547432E-04      0.1311993588E-03
+          0               484           1            77    1     8      -0.3797895182E-07      48    1    9        -0.3663799725E-04      0.1296918174E-03
+          0               485           1            77    1     1      -0.3755343048E-07      48    1    9        -0.3621634096E-04      0.1282011480E-03
+          0               486           1            77    1     1      -0.3712398568E-07      48    1    9        -0.3579840995E-04      0.1267282187E-03
+          0               487           1            77    1     8      -0.3671469099E-07      48    1    9        -0.3538606688E-04      0.1252711400E-03
+          0               488           1            77    1     3      -0.3629587955E-07      48    1    9        -0.3497814760E-04      0.1238316867E-03
+          0               489           1            77    1     8      -0.3588659525E-07      48    1    9        -0.3457395360E-04      0.1224064064E-03
+          0               490           1            77    1     1      -0.3547925213E-07      48    1    9        -0.3417581320E-04      0.1209981442E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               491           1            77    1     8      -0.3507915014E-07      48    1    9        -0.3378139809E-04      0.1196059516E-03
+          0               492           1            77    1     1      -0.3468072969E-07      48    1    9        -0.3339187242E-04      0.1182289171E-03
+          0               493           1            77    1     1      -0.3429357783E-07      48    1    9        -0.3300514072E-04      0.1168676420E-03
+          0               494           1            77    1     8      -0.3390066749E-07      48    1    9        -0.3262422979E-04      0.1155229900E-03
+          0               495           1            77    1     8      -0.3352425794E-07      48    1    9        -0.3224750981E-04      0.1141918982E-03
+          0               496           1            77    1     6      -0.3313648762E-07      48    1    9        -0.3187498078E-04      0.1128769369E-03
+          0               497           1            77    1     1      -0.3276687985E-07      48    1    9        -0.3150827251E-04      0.1115764157E-03
+          0               498           1            77    1     1      -0.3239730933E-07      48    1    9        -0.3114342690E-04      0.1102913858E-03
+          0               499           1            77    1     3      -0.3203353311E-07      48    1    9        -0.3078393638E-04      0.1090214263E-03
+          0               500           1            77    1     2      -0.3166482850E-07      48    1    9        -0.3042770550E-04      0.1077643323E-03
+                                                   Max.-Head-Change                         Max.-Flux-Residual
+  Residual-Control   Outer-Iter.   Inner-Iter.     Column Row Layer    Maximum-Head-Change  Column Row Layer    Maximum-Flux-Residual          L2-NORM 
+          0               501           1            77    1     8      -0.3130632400E-07      48    1    9        -0.3007589839E-04      0.1065214618E-03
+          0               502           1            77    1     1      -0.3095764785E-07      48    1    9        -0.2972851507E-04      0.1052924865E-03
+          0               503           1            77    1     1      -0.3060604123E-07      48    1    9        -0.2938462421E-04      0.1040790862E-03
+          0               504           1            77    1     1      -0.3025523076E-07      48    1    9        -0.2904515713E-04      0.1028785988E-03
+          0               505           1            77    1     1      -0.2991433089E-07      48    1    9        -0.2870941535E-04      0.1016916008E-03
+          0               506           1            77    1     8      -0.2957991846E-07      48    1    9        -0.2837623470E-04      0.1005176851E-03
+
+    ------------------------------------------------
+       NWT REQUIRED          506 OUTER ITERATIONS 
+       AND A TOTAL OF       1623 INNER ITERATIONS.
+    ------------------------------------------------
+
+ OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP    1
+    PRINT BUDGET
+    SAVE HEAD FOR ALL LAYERS
+    SAVE DRAWDOWN FOR ALL LAYERS
+    SAVE BUDGET
+ UBDSV2 SAVING "   CONSTANT HEAD" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW RIGHT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW LOWER FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV3 SAVING "        RECHARGE" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+
+ SAVING SATURATED THICKNESS AND FLOW TERMS ON UNIT  333 FOR MT3DMS
+ BY THE LINK-MT3DMS PACKAGE V7 AT TIME STEP    1, STRESS PERIOD    1
+
+
+ HEAD WILL BE SAVED ON UNIT    2 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+ DRAWDOWN WILL BE SAVED ON UNIT    3 AT END OF TIME STEP    1, STRESS PERIOD    1
+1
+  VOLUMETRIC BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUMES      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE     =           0.0000               STORAGE     =           0.0000
+       CONSTANT HEAD     =       32123.9883         CONSTANT HEAD     =       32123.9883
+            RECHARGE     =          45.0000              RECHARGE     =          45.0000
+
+                TOTAL IN =       32168.9883                  TOTAL IN =       32168.9883
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE     =           0.0000               STORAGE     =           0.0000
+       CONSTANT HEAD     =       32168.9902         CONSTANT HEAD     =       32168.9902
+            RECHARGE     =           0.0000              RECHARGE     =           0.0000
+
+               TOTAL OUT =       32168.9902                 TOTAL OUT =       32168.9902
+
+                IN - OUT =      -1.9531E-03                  IN - OUT =      -1.9531E-03
+
+     PERCENT DISCREPANCY =          -0.00         PERCENT DISCREPANCY =          -0.00
+
+
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+1
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2023/05/24 23:00:05
+ Elapsed run time:  0.144 Seconds
+

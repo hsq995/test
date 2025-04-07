@@ -1,0 +1,52 @@
+# MF2K DISCRETIZATION FILE
+#
+#
+# NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+    40      1    100      3      4      2                                           #  1. NLAY NROW NCOL NPER ITMUNI LENUNI
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0     #  2. LAYCBD(NLAY)
+CONSTANT 1.0                                                                        #  3. DELR(NCOL)
+CONSTANT 1.0                                                                        #  4. DELC(NROW)
+CONSTANT 40.0                                                                       #  5. Top(NCOL,NROW)     LAY 1
+CONSTANT 39.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 1
+CONSTANT 38.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 2
+CONSTANT 37.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 3
+CONSTANT 36.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 4
+CONSTANT 35.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 5
+CONSTANT 34.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 6
+CONSTANT 33.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 7
+CONSTANT 32.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 8
+CONSTANT 31.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 9
+CONSTANT 30.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 10
+CONSTANT 29.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 11
+CONSTANT 28.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 12
+CONSTANT 27.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 13
+CONSTANT 26.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 14
+CONSTANT 25.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 15
+CONSTANT 24.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 16
+CONSTANT 23.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 17
+CONSTANT 22.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 18
+CONSTANT 21.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 19
+CONSTANT 20.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 20
+CONSTANT 19.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 21
+CONSTANT 18.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 22
+CONSTANT 17.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 23
+CONSTANT 16.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 24
+CONSTANT 15.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 25
+CONSTANT 14.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 26
+CONSTANT 13.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 27
+CONSTANT 12.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 28
+CONSTANT 11.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 29
+CONSTANT 10.0                                                                       #  6. BOTM(NCOL,NROW)    LAY 30
+CONSTANT 9.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 31
+CONSTANT 8.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 32
+CONSTANT 7.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 33
+CONSTANT 6.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 34
+CONSTANT 5.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 35
+CONSTANT 4.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 36
+CONSTANT 3.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 37
+CONSTANT 2.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 38
+CONSTANT 1.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 39
+CONSTANT 0.0                                                                        #  6. BOTM(NCOL,NROW)    LAY 40
+10.0 10 1.0 Tr                                                                      #  7. PERLEN NSTP TSMULT Ss/tr    PERIOD 1
+10.0 10 1.0 Tr                                                                      #  7. PERLEN NSTP TSMULT Ss/tr    PERIOD 2
+10.0 10 1.0 Tr                                                                      #  7. PERLEN NSTP TSMULT Ss/tr    PERIOD 3

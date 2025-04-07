@@ -1,0 +1,651 @@
+                                  MODFLOW-2005     
+      U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUND-WATER FLOW MODEL
+                            VERSION 1.12.00 2/3/2017
+
+ LIST FILE: CASE4.out
+                         UNIT    1
+
+ OPENING CASE4.hed
+ FILE TYPE:DATA(BINARY)   UNIT    2   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.drw
+ FILE TYPE:DATA(BINARY)   UNIT    3   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.ccf
+ FILE TYPE:DATA(BINARY)   UNIT   40   STATUS:UNKNOWN
+ FORMAT:BINARY                 ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.lmt6
+ FILE TYPE:LMT6   UNIT    4   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.dis
+ FILE TYPE:DIS   UNIT    7   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.ba6
+ FILE TYPE:BAS6   UNIT    8   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.lpf
+ FILE TYPE:LPF   UNIT   13   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.oc
+ FILE TYPE:OC   UNIT   10   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.rch
+ FILE TYPE:RCH   UNIT   11   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ OPENING CASE4.pcg
+ FILE TYPE:PCG   UNIT   14   STATUS:OLD    
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+
+ BAS -- BASIC PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT    8
+ 
+ MODFLOW was compiled using uniform precision
+ Precision of REAL and DOUBLE PRECISION variables:          15
+
+ DISCRETIZATION INPUT DATA READ FROM UNIT    7
+ # MF2K DISCRETIZATION FILE
+ #
+ #
+ # NLAY NROW NCOL NPER TIMEUNITS LENUNITS
+   10 LAYERS         1 ROWS       100 COLUMNS
+    1 STRESS PERIOD(S) IN SIMULATION
+ MODEL TIME UNIT IS DAYS
+ MODEL LENGTH UNIT IS METERS
+  Confining bed flag for each layer:
+   0   0   0   0   0   0   0   0   0   0
+
+                     DELR =   100.000    
+
+                     DELC =   100.000    
+
+ TOP ELEVATION OF LAYER 1 =   2000.00    
+
+   MODEL LAYER BOTTOM EL. =   1800.00     FOR LAYER   1
+
+   MODEL LAYER BOTTOM EL. =   1600.00     FOR LAYER   2
+
+   MODEL LAYER BOTTOM EL. =   1400.00     FOR LAYER   3
+
+   MODEL LAYER BOTTOM EL. =   1200.00     FOR LAYER   4
+
+   MODEL LAYER BOTTOM EL. =   1000.00     FOR LAYER   5
+
+   MODEL LAYER BOTTOM EL. =   800.000     FOR LAYER   6
+
+   MODEL LAYER BOTTOM EL. =   600.000     FOR LAYER   7
+
+   MODEL LAYER BOTTOM EL. =   400.000     FOR LAYER   8
+
+   MODEL LAYER BOTTOM EL. =   200.000     FOR LAYER   9
+
+   MODEL LAYER BOTTOM EL. =   0.00000     FOR LAYER  10
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT    SS FLAG
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000         SS
+
+ STEADY-STATE SIMULATION
+
+
+
+ 
+ THE FREE FORMAT OPTION HAS BEEN SELECTED
+
+           BOUNDARY ARRAY =              1 FOR LAYER   1
+
+           BOUNDARY ARRAY =              1 FOR LAYER   2
+
+           BOUNDARY ARRAY =              1 FOR LAYER   3
+
+           BOUNDARY ARRAY =              1 FOR LAYER   4
+
+           BOUNDARY ARRAY =              1 FOR LAYER   5
+
+           BOUNDARY ARRAY =              1 FOR LAYER   6
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   7
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   8
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER   9
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                     BOUNDARY ARRAY FOR LAYER  10
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ AQUIFER HEAD WILL BE SET TO  -999.00     AT ALL NO-FLOW NODES (IBOUND=0).
+
+             INITIAL HEAD =   2000.00     FOR LAYER   1
+
+             INITIAL HEAD =   2000.00     FOR LAYER   2
+
+             INITIAL HEAD =   2000.00     FOR LAYER   3
+
+             INITIAL HEAD =   2000.00     FOR LAYER   4
+
+             INITIAL HEAD =   2000.00     FOR LAYER   5
+
+             INITIAL HEAD =   2000.00     FOR LAYER   6
+
+
+
+                       INITIAL HEAD FOR LAYER   7
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   8
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER   9
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+
+
+                       INITIAL HEAD FOR LAYER  10
+ READING ON UNIT    8 WITH FORMAT: (FREE)              
+
+ OUTPUT CONTROL IS SPECIFIED ONLY AT TIME STEPS FOR WHICH OUTPUT IS DESIRED
+ COMPACT CELL-BY-CELL BUDGET FILES WILL BE WRITTEN
+ AUXILIARY DATA WILL BE SAVED IN CELL-BY-CELL BUDGET FILES
+ HEAD PRINT FORMAT CODE IS   0    DRAWDOWN PRINT FORMAT CODE IS   0
+ HEADS WILL BE SAVED ON UNIT    2    DRAWDOWNS WILL BE SAVED ON UNIT    3
+
+ LPF -- LAYER-PROPERTY FLOW PACKAGE, VERSION 7, 5/2/2005
+         INPUT READ FROM UNIT   13
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+ HEAD AT CELLS THAT CONVERT TO DRY=  -888.00    
+ No named parameters
+
+   LAYER FLAGS:
+ LAYER       LAYTYP        LAYAVG         CHANI        LAYVKA        LAYWET
+ ---------------------------------------------------------------------------
+    1             1             0    -1.000E+00             0             1
+    2             1             0    -1.000E+00             0             1
+    3             1             0    -1.000E+00             0             1
+    4             1             0    -1.000E+00             0             1
+    5             1             0    -1.000E+00             0             1
+    6             1             0    -1.000E+00             0             1
+    7             1             0    -1.000E+00             0             1
+    8             1             0    -1.000E+00             0             1
+    9             1             0    -1.000E+00             0             1
+   10             1             0    -1.000E+00             0             1
+
+   INTERPRETATION OF LAYER FLAGS:
+                        INTERBLOCK     HORIZONTAL    DATA IN
+         LAYER TYPE   TRANSMISSIVITY   ANISOTROPY   ARRAY VKA   WETTABILITY
+ LAYER      (LAYTYP)      (LAYAVG)       (CHANI)      (LAYVKA)      (LAYWET)
+ ---------------------------------------------------------------------------
+    1   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    2   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    3   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    4   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    5   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    6   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    7   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    8   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+    9   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+   10   CONVERTIBLE      HARMONIC      VARIABLE    VERTICAL K      WETTABLE
+
+ WETTING CAPABILITY IS ACTIVE IN  10 LAYERS
+  WETTING FACTOR=  0.100000000000000     
+  WETTING ITERATION INTERVAL=           3
+  IHDWET=           0
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   1
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   1
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   1
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   1
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   2
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   2
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   2
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   2
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   3
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   3
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   3
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   3
+
+
+
+              HYD. COND. ALONG ROWS FOR LAYER   4
+ READING ON UNIT   13 WITH FORMAT: (FREE)              
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   4
+
+
+
+                VERTICAL HYD. COND. FOR LAYER   4
+ READING ON UNIT   13 WITH FORMAT: (FREE)              
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   4
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   5
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   5
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   5
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   5
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   6
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   6
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   6
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   6
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   7
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   7
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   7
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   7
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   8
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   8
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   8
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   8
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER   9
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER   9
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER   9
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER   9
+
+    HYD. COND. ALONG ROWS =   10.0000     FOR LAYER  10
+
+   HORIZ. ANI. (COL./ROW) =   1.00000     FOR LAYER  10
+
+      VERTICAL HYD. COND. =   10.0000     FOR LAYER  10
+
+         WETDRY PARAMETER =   1.00000     FOR LAYER  10
+
+ RCH -- RECHARGE PACKAGE, VERSION 7, 5/2/2005 INPUT READ FROM UNIT   11
+ #
+ No named parameters
+ OPTION 3 -- RECHARGE TO HIGHEST ACTIVE NODE IN EACH VERTICAL COLUMN
+ CELL-BY-CELL FLOWS WILL BE SAVED ON UNIT   40
+
+
+     0 Recharge parameters
+
+ PCG -- CONJUGATE-GRADIENT SOLUTION PACKAGE, VERSION 7, 5/2/2005
+ MAXIMUM OF    500 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF     50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ MATRIX PRECONDITIONING TYPE :    1
+
+
+
+                                    SOLUTION BY THE CONJUGATE-GRADIENT METHOD
+                                   -------------------------------------------
+                    MAXIMUM NUMBER OF CALLS TO PCG ROUTINE =      500
+                        MAXIMUM ITERATIONS PER CALL TO PCG =       50
+                               MATRIX PRECONDITIONING TYPE =        1
+        RELAXATION FACTOR (ONLY USED WITH PRECOND. TYPE 1) =    0.10000E+01
+ PARAMETER OF POLYNOMIAL PRECOND. = 2 (2) OR IS CALCULATED :        0
+                         HEAD CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+                     RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E-01
+            PCG HEAD AND RESIDUAL CHANGE PRINTOUT INTERVAL =      999
+     PRINTING FROM SOLVER IS LIMITED(1) OR SUPPRESSED (>1) =        2
+                            STEADY-STATE DAMPING PARAMETER =    0.60000E+00
+                               TRANSIENT DAMPING PARAMETER =    0.60000E+00
+
+ WARNING READING LMT PACKAGE INPUT DATA:
+ [STANDARD] HEADER NO LONGER SUPPORTED; [EXTENDED] HEADER USED INSTEAD.
+
+
+ ***Link-MT3DMS Package v7***
+ OPENING LINK-MT3DMS OUTPUT FILE: CASE4.hff                                                                                                                                                                                               
+ ON UNIT NUMBER:   333
+ FILE TYPE: UNFORMATTED
+ HEADER OPTION: EXTENDED
+ ***Link-MT3DMS Package v7***
+
+1
+                            STRESS PERIOD NO.    1, LENGTH =   1.000000    
+                            -----------------------------------------------
+
+                              NUMBER OF TIME STEPS =     1
+
+                               MULTIPLIER FOR DELT =     1.000
+
+                            INITIAL TIME STEP SIZE =   1.000000    
+
+
+
+                           RECHARGE
+ READING ON UNIT   11 WITH FORMAT: (FREE)              
+ 
+ SOLVING FOR HEAD 
+
+ CELL CONVERSIONS FOR ITER.=  2  LAYER=  1  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   DRY(  1,  2)   DRY(  1,  3)   DRY(  1,  4)   DRY(  1,  5)   
+    DRY(  1,  6)   DRY(  1,  7)   DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   
+    DRY(  1, 11)   DRY(  1, 12)   DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   
+    DRY(  1, 16)   DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   
+    DRY(  1, 21)   DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   
+    DRY(  1, 26)   DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   
+    DRY(  1, 31)   DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   
+    DRY(  1, 36)   DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  2  LAYER=  2  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   DRY(  1,  2)   DRY(  1,  3)   DRY(  1,  4)   DRY(  1,  5)   
+    DRY(  1,  6)   DRY(  1,  7)   DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   
+    DRY(  1, 11)   DRY(  1, 12)   DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   
+    DRY(  1, 16)   DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   
+    DRY(  1, 21)   DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   
+    DRY(  1, 26)   DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   
+    DRY(  1, 31)   DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   
+    DRY(  1, 36)   DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  2  LAYER=  3  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   DRY(  1,  2)   DRY(  1,  3)   DRY(  1,  4)   DRY(  1,  5)   
+    DRY(  1,  6)   DRY(  1,  7)   DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   
+    DRY(  1, 11)   DRY(  1, 12)   DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   
+    DRY(  1, 16)   DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   
+    DRY(  1, 21)   DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   
+    DRY(  1, 26)   DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   
+    DRY(  1, 31)   DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   
+    DRY(  1, 36)   DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  2  LAYER=  4  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 21)   DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   
+    DRY(  1, 26)   DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   
+    DRY(  1, 31)   DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   
+    DRY(  1, 36)   DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  2  LAYER=  5  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  3  LAYER=  4  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   DRY(  1,  2)   DRY(  1,  3)   DRY(  1,  4)   DRY(  1,  5)   
+    DRY(  1,  6)   DRY(  1,  7)   DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   
+    DRY(  1, 11)   DRY(  1, 12)   DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   
+    DRY(  1, 16)   DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   
+
+ CELL CONVERSIONS FOR ITER.=  3  LAYER=  5  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   DRY(  1,  2)   DRY(  1,  3)   DRY(  1,  4)   DRY(  1,  5)   
+    DRY(  1,  6)   DRY(  1,  7)   DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   
+    DRY(  1, 11)   DRY(  1, 12)   DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   
+    DRY(  1, 16)   DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   
+    DRY(  1, 21)   DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   
+    DRY(  1, 26)   DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   
+    DRY(  1, 31)   DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   
+    DRY(  1, 36)   DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+
+ CELL CONVERSIONS FOR ITER.=  3  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 41)   DRY(  1, 42)   DRY(  1, 43)   DRY(  1, 44)   DRY(  1, 45)   
+    DRY(  1, 46)   DRY(  1, 47)   DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   
+    DRY(  1, 51)   DRY(  1, 52)   DRY(  1, 53)   DRY(  1, 54)   DRY(  1, 55)   
+    DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   DRY(  1, 59)   DRY(  1, 60)   
+    DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   DRY(  1, 64)   DRY(  1, 65)   
+    DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   DRY(  1, 69)   DRY(  1, 70)   
+    DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   DRY(  1, 74)   DRY(  1, 75)   
+    DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  3  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 81)   DRY(  1, 82)   DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  4  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 17)   DRY(  1, 18)   DRY(  1, 19)   DRY(  1, 20)   DRY(  1, 21)   
+    DRY(  1, 22)   DRY(  1, 23)   DRY(  1, 24)   DRY(  1, 25)   DRY(  1, 26)   
+    DRY(  1, 27)   DRY(  1, 28)   DRY(  1, 29)   DRY(  1, 30)   DRY(  1, 31)   
+    DRY(  1, 32)   DRY(  1, 33)   DRY(  1, 34)   DRY(  1, 35)   DRY(  1, 36)   
+    DRY(  1, 37)   DRY(  1, 38)   DRY(  1, 39)   DRY(  1, 40)   
+
+ CELL CONVERSIONS FOR ITER.=  4  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 54)   DRY(  1, 55)   DRY(  1, 56)   DRY(  1, 57)   DRY(  1, 58)   
+    DRY(  1, 59)   DRY(  1, 60)   DRY(  1, 61)   DRY(  1, 62)   DRY(  1, 63)   
+    DRY(  1, 64)   DRY(  1, 65)   DRY(  1, 66)   DRY(  1, 67)   DRY(  1, 68)   
+    DRY(  1, 69)   DRY(  1, 70)   DRY(  1, 71)   DRY(  1, 72)   DRY(  1, 73)   
+    DRY(  1, 74)   DRY(  1, 75)   DRY(  1, 76)   DRY(  1, 77)   DRY(  1, 78)   
+    DRY(  1, 79)   DRY(  1, 80)   
+
+ CELL CONVERSIONS FOR ITER.=  4  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 86)   DRY(  1, 87)   DRY(  1, 88)   DRY(  1, 89)   DRY(  1, 90)   
+    DRY(  1, 91)   DRY(  1, 92)   DRY(  1, 93)   DRY(  1, 94)   DRY(  1, 95)   
+    DRY(  1, 96)   DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   DRY(  1,100)   
+
+ CELL CONVERSIONS FOR ITER.=  5  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  8)   DRY(  1,  9)   DRY(  1, 10)   DRY(  1, 11)   DRY(  1, 12)   
+    DRY(  1, 13)   DRY(  1, 14)   DRY(  1, 15)   DRY(  1, 16)   
+
+ CELL CONVERSIONS FOR ITER.=  5  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 48)   DRY(  1, 49)   DRY(  1, 50)   DRY(  1, 51)   DRY(  1, 52)   
+    DRY(  1, 53)   
+
+ CELL CONVERSIONS FOR ITER.=  5  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 78)   DRY(  1, 79)   DRY(  1, 80)   DRY(  1, 81)   DRY(  1, 82)   
+    DRY(  1, 83)   DRY(  1, 84)   DRY(  1, 85)   
+
+ CELL CONVERSIONS FOR ITER.=  6  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  4)   DRY(  1,  5)   DRY(  1,  6)   DRY(  1,  7)   
+
+ CELL CONVERSIONS FOR ITER.=  6  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 46)   DRY(  1, 47)   
+
+ CELL CONVERSIONS FOR ITER.=  6  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 76)   DRY(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.=  6  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 97)   DRY(  1, 98)   DRY(  1, 99)   
+
+ CELL CONVERSIONS FOR ITER.=  7  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  3)   
+
+ CELL CONVERSIONS FOR ITER.=  7  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 96)   
+
+ CELL CONVERSIONS FOR ITER.=  8  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  2)   
+
+ CELL CONVERSIONS FOR ITER.=  9  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 46)   
+
+ CELL CONVERSIONS FOR ITER.=  9  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 76)   
+
+ CELL CONVERSIONS FOR ITER.=  9  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 96)   
+
+ CELL CONVERSIONS FOR ITER.= 10  LAYER=  7  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 46)   
+
+ CELL CONVERSIONS FOR ITER.= 12  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 15  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 18  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 21  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 96)   
+
+ CELL CONVERSIONS FOR ITER.= 24  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 96)   
+
+ CELL CONVERSIONS FOR ITER.= 25  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 27  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    WET(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 42  LAYER=  6  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,  1)   
+
+ CELL CONVERSIONS FOR ITER.= 42  LAYER=  8  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 77)   
+
+ CELL CONVERSIONS FOR ITER.= 42  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1, 96)   
+
+ CELL CONVERSIONS FOR ITER.= 44  LAYER=  9  STEP=  1  PERIOD=   1   (ROW,COL)
+    DRY(  1,100)   
+
+ OUTPUT CONTROL FOR STRESS PERIOD    1   TIME STEP    1
+    PRINT BUDGET
+    SAVE HEAD FOR ALL LAYERS
+    SAVE DRAWDOWN FOR ALL LAYERS
+    SAVE BUDGET
+ UBDSV2 SAVING "   CONSTANT HEAD" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW RIGHT FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV1 SAVING "FLOW LOWER FACE " ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+ UBDSV3 SAVING "        RECHARGE" ON UNIT  40 AT TIME STEP  1, STRESS PERIOD   1
+
+ SAVING SATURATED THICKNESS AND FLOW TERMS ON UNIT  333 FOR MT3DMS
+ BY THE LINK-MT3DMS PACKAGE V7 AT TIME STEP    1, STRESS PERIOD    1
+
+
+ HEAD WILL BE SAVED ON UNIT    2 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+ DRAWDOWN WILL BE SAVED ON UNIT    3 AT END OF TIME STEP    1, STRESS PERIOD    1
+1
+  VOLUMETRIC BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUMES      L**3       RATES FOR THIS TIME STEP      L**3/T
+     ------------------                 ------------------------
+
+           IN:                                      IN:
+           ---                                      ---
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =       31756.9602         CONSTANT HEAD =       31756.9602
+            RECHARGE =          45.0000              RECHARGE =          45.0000
+
+            TOTAL IN =       31801.9602              TOTAL IN =       31801.9602
+
+          OUT:                                     OUT:
+          ----                                     ----
+             STORAGE =           0.0000               STORAGE =           0.0000
+       CONSTANT HEAD =       31801.9602         CONSTANT HEAD =       31801.9602
+            RECHARGE =           0.0000              RECHARGE =           0.0000
+
+           TOTAL OUT =       31801.9602             TOTAL OUT =       31801.9602
+
+            IN - OUT =       7.3658E-05              IN - OUT =       7.3658E-05
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+1
+
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2023/05/24 22:59:29
+ Elapsed run time:  0.016 Seconds
+

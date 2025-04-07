@@ -1,0 +1,12 @@
+#
+    2    40 AUX IFACE AUX QFACT AUX CELLGRP                    #  2. MXACTW IWELCB [Option]
+SPECIFY 0.1                                                    
+    2     0                                                    #  5. ITMP NP          Stress Period   1
+   37     1    21       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
+   37     1    60       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
+    2     0                                                    #  5. ITMP NP          Stress Period   2
+   37     1    21       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
+   37     1    60       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
+    2     0                                                    #  5. ITMP NP          Stress Period   3
+   37     1    21       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
+   37     1    60       -100.0     0           0.0    -1       #  6. Layer Row Column Q [xyz]
